@@ -1,0 +1,206 @@
+
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../font/ProximaNovaRegular.eot');
+	src: local('ProximaNovaRegular'), url('../font/ProximaNovaRegular.woff') format('woff'), url('../font/ProximaNovaRegular.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_58703">Text with this font applied</p> */
+.fontsforweb_fontid_58703 {
+	font-family: 'ProximaNovaRegular' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+
+/* @font-face {
+    font-family: 'Raleway Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Regular'), url('../font/Raleway-Regular.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'), url('../font/Raleway-Regular.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Italic'), url('../font/Raleway-Italic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Thin'), url('../font/Raleway-Thin.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Thin Italic'), url('../font/Raleway-ThinItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraLight'), url('../font/Raleway-ExtraLight.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraLight Italic'), url('../font/Raleway-ExtraLightItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Light'), url('../font/Raleway-Light.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Light Italic'), url('../font/Raleway-LightItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Medium'), url('../font/Raleway-Medium.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Medium Italic'), url('../font/Raleway-MediumItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway SemiBold'), url('../font/Raleway-SemiBold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway SemiBold Italic'), url('../font/Raleway-SemiBoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Bold'), url('../font/Raleway-Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Bold Italic'), url('../font/Raleway-BoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraBold'), url('../font/Raleway-ExtraBold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraBold Italic'), url('../font/Raleway-ExtraBoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Black'), url('../font/Raleway-Black.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Raleway Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Black Italic'), url('../font/Raleway-BlackItalic.woff') format('woff');
+    } */
+
+    /*-------------*/
+
+    @font-face {
+        font-family: 'Gilroy-Bold ☞';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gilroy-Bold ☞'), url('../font/Gilroy-Bold.woff') format('woff');
+        }
+        
+        
+        @font-face {
+        font-family: 'Gilroy-Heavy ☞';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gilroy-Heavy ☞'), url('../font/Gilroy-Heavy.woff') format('woff');
+        }
+        
+        
+        @font-face {
+        font-family: 'Gilroy-Light ☞';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gilroy-Light ☞'), url('../font/Gilroy-Light.woff') format('woff');
+        }
+        
+        
+        @font-face {
+        font-family: 'Gilroy-Medium ☞';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gilroy-Medium ☞'), url('../font/Gilroy-Medium.woff') format('woff');
+        }
+        
+        
+        @font-face {
+        font-family: 'Gilroy-Regular ☞';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gilroy-Regular ☞'), url('../font/Gilroy-Regular.woff') format('woff');
+        }
