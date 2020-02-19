@@ -710,7 +710,7 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 .Industry_div{
     float: left;
-    width: 270px;
+    width: 315px;
 }
 .Industry_logo{
     width: 250px;
@@ -1655,33 +1655,48 @@ button:hover {
 .clear{
     clear: both;
 }
-
-
-.Payasyougrow_bg{   
-    color: #0a4f8d;
-    font-weight: bold;   
-    font-size: 65px;
-    text-align: center;
+.paddingleft0{
+    padding-left: 0;
 }
-.Payasyougrow_bg1{  
-
-  padding: 20px 0 0 0;  
-  text-align: center;
-  font-size: 18px;
-  color: #3c3c3c;  
-  font-weight: normal;
+.paddingrt0{
+    padding-right: 0;
 }
 .hdrm{
-    font-size: 30px;
+    font-size: 50px;
     text-align: left;
-    color: #0e5b9f;
-    padding-top: 30px;
-    line-height: 35px;
+    color: #4c4c4c;   
+    font-weight: bold;
 }
 .hdrm1{
-    font-size: 20px;
+    font-size: 50px;
     text-align: left;
-    color: #3c3c3c;
+    color: #ff8873;
+    font-weight: bold;
+}
+.industry_p50{
+    padding-top: 50px;
+    height: 400px;
+}
+.paytopp{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pay_pdng{
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.blueline{
+    height: 150px;
+    float: left;   
+    padding: 0;
+    width: 5% !important;
+    border-left: solid 6px #66b3d8;
+}
+.paypara{
+    font-size: 16px;
+    text-align: left;
+    padding-top: 1px;
+    padding-right: 100px;
 }
 .modal-header .close:hover{
     color: #3da5d6 !important;
@@ -1695,13 +1710,87 @@ button:hover {
     padding: 0px !important;
     margin: 1px !important;
 }
-
-/*--------------------*/
-.industry_p50{
-    padding-top: 50px;
-    height: 400px;
+.monthlyhdr{
+    color: #66b3d8;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 0;
+}
+.monthlydis{
+    background-color: #66b3d8;
+    color: #fff;
+    padding: 3px 6px 3px 6px;
+    font-size: 20px;
+    text-align: left;
+}
+.hpatop{
+    padding-top: 20px;
+}
+.divtop{
+    padding-top: 10px;
+}
+.box1, .box2, .box3, .box4{
+    height: 200px;
+    padding: 70px 0 0 10px;
+    border-right:  solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+}
+.box2{
+    border-bottom:  solid 1px #e0e0e0;
+    border-right: 0;
+}
+.box3{
+   padding: 40px 0 0 10px;
+   border-bottom: 0;
+}
+.box4{
+    padding: 40px 0 0 10px;
+    border-bottom: 0;
+    border-right: 0;
 }
 
+.iconimg{
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+.icontextdiv{   
+    float: left;
+}
+.payinnerpdng{
+    padding-top: 50px;
+}
+.payh1{
+    color: #363636;
+    font-size: 23px;
+    text-align: left;
+    font-weight: 600;
+}
+.payh2{
+    color: #36afd5;
+    font-size: 23px;
+    text-align: left;
+    font-weight: 600;
+}
+.payh3{
+    color: #0e447e;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+}
+.payh4{
+    color: #0e447e;
+    font-size: 30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+
+
+
+/*--------------------*/
 
 
 

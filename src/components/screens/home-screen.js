@@ -677,7 +677,7 @@ export default class Homescreen extends Component {
                                     </Tabs>
                                 </div>
                                 <div className="clear"></div>
-                                <div className="col-sm-11 industry_p50">
+                                <div className="col-sm-12 industry_p50">
                                     <div className="trustedbyind_hdr">Industry Expertise</div>
                                     <Slider autoplay={5000} className="slider-wrapper1">
                                         {Industry_Expertise.map((item, index) => (
@@ -784,99 +784,68 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
 
-                    <div className="col-md-12 col-sm-12 paybg" id="pricing">
-                        <div className="container-fluid content_mrg">
-                            <Fade top>
+                    <div className="col-md-12 col-sm-12 pay_pdng">
+                        <div className="row paytopp">
+                            <div className="col-sm-6">
                                 <div className="row">
-                                    <div className="col-md-12 Payasyougrow_bg">
-                                        <div>Pay as you grow</div>
-                                        <div className="Payasyougrow_bg1">
+                                    <div className="col-sm-1 blueline"></div>
+                                    <div className="col-sm-11 paddingleft0">
+                                        <p className="hdrm">PAY AS YOU <span className="hdrm1">GROW</span></p>
+                                        <p className="paypara">
                                             As your company grows, Yoofoo has the technical capabilities to provide you with top of the line services.
                                             As a long term partner with us, we have the additional savings described below.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div className="row hpatop">
+                                    <div className="col-sm-12 monthlyhdr">Monthly Service Packages</div>
+                                    <div className="col-sm-4 monthlydis">Discount as much as</div>
+                                </div>
+                                <div className="row divtop">
+                                    <div className="col-sm-5 box1">
+                                        <div className="iconimg">
+                                            <img className="img-fluid" src="../../assets/basic.jpg" alt="Basic"></img>
+                                        </div>
+                                        <div className="icontextdiv">
+                                            <div className="payh1">Basic</div>
+                                            <div className="payh2">UPTO <span className="payh3">20 <span className="payh4">%</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div className="col-sm-5 box2">
+                                        <div className="iconimg">
+                                            <img className="img-fluid" src="../../assets/standard.jpg" alt="Basic"></img>
+                                        </div>
+                                        <div className="icontextdiv">
+                                            <div className="payh1">Standard</div>
+                                            <div className="payh2">UPTO <span className="payh3">30 <span className="payh4">%</span></span></div>
                                         </div>
                                     </div>
                                 </div>
-                            </Fade>
-                            <div className="row">
-                                {/* <div className="col-sm-12">
-                                    <Fade left>
-                                        <div className="row">
-                                            <div className="hdrm">Monthly Service Packages
-                                            <div className="hdrm1">Discounts as much as</div>
-                                            </div>
-
+                                <div className="row">
+                                    <div className="col-sm-5 box3">
+                                        <div className="iconimg">
+                                            <img className="img-fluid" src="../../assets/professoonal.jpg" alt="Basic"></img>
                                         </div>
-                                    </Fade>
-                                </div>
-                                <div className="col-sm-12">
-                                    <div className="row">
-                                        <div className="col-sm-12 planspadng">
-                                            <div class="plans-section">
-                                                <div class="plans-main">
-                                                    <LightSpeed left>
-                                                        <div>
-                                                            <div class="price-grid">
-                                                                <div class="price-block0 agile">
-                                                                    <div class="price-gd-top pric-clr1">
-                                                                        <i class="fa fa-cube payicons" aria-hidden="true"></i>
-                                                                        <h4>Basic</h4>
-                                                                        <span className="upto">UP TO</span>
-                                                                        <h3>20<span>%</span></h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </LightSpeed>
-                                                    <LightSpeed right>
-                                                        <div>
-                                                            <div class="price-grid ">
-                                                                <div class="price-block price-block02 agile">
-                                                                    <div class="price-gd-top pric-clr2">
-                                                                        <i class="fa fa-life-ring payicons hdrh3" aria-hidden="true"></i>
-                                                                        <h4 className="hdrh3">Standard</h4>
-                                                                        <span className="upto upto1">UP TO</span>
-                                                                        <h3 className="darkgry">30<span>%</span></h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </LightSpeed>
-                                                    <Flip left>
-                                                        <div>
-                                                            <div class="price-grid lost">
-                                                                <div class="price-block price-block2 agile">
-                                                                    <div class="price-gd-top pric-clr3">
-                                                                        <i class="fa fa-handshake payicons prohdr" aria-hidden="true"></i>
-                                                                        <h4 className="prohdr">Professional</h4>
-                                                                        <span className="upto1">UP TO</span>
-                                                                        <h3 className="hdrh3">40<span>%</span></h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Flip>
-                                                    <Flip right>
-                                                        <div>
-                                                            <div class="price-grid lost">
-                                                                <div class="price-block price-block3 agile">
-                                                                    <div class="price-gd-top pric-clr3">
-                                                                        <i class="fa fa-futbol payicons" aria-hidden="true"></i>
-                                                                        <h4>Ultimate</h4>
-                                                                        <span className="upto">UP TO</span>
-                                                                        <h3>50<span>%</span></h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Flip>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
+                                        <div className="icontextdiv">
+                                            <div className="payh1">Professoonal</div>
+                                            <div className="payh2">UPTO <span className="payh3">40 <span className="payh4">%</span></span></div>
                                         </div>
                                     </div>
-                                </div> */}
+                                    <div className="col-sm-5 box4">
+                                        <div className="iconimg">
+                                            <img className="img-fluid" src="../../assets/ultimate.jpg" alt="Basic"></img>
+                                        </div>
+                                        <div className="icontextdiv">
+                                            <div className="payh1">Ultimate</div>
+                                            <div className="payh2">UPTO <span className="payh3">50 <span className="payh4">%</span> </span></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
+                            <div className="col-sm-6">
+                                <img className="img-fluid" src="../../assets/payasugrow_rbg.png" alt="pay as u grow"></img>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-12 col-sm-12">
