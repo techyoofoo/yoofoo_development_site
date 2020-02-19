@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
-import { Zoom, Fade, Flip, Slide, Bounce, LightSpeed } from 'react-reveal';
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Zoom, Fade, Flip, Slide, Bounce, LightSpeed, Reveal } from 'react-reveal';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import ReactTooltip from 'react-tooltip';
@@ -11,6 +10,7 @@ import '../styles/fontstyle.css';
 import '../styles/styles.css';
 import '../styles/slidernews.css';
 import Footerscreen from '../screens/footer';
+import HeaderMenuscreen from '../screens/headermenu';
 
 const content = [
     {
@@ -141,77 +141,322 @@ const content_Testimonials = [
 ];
 
 export default class Homescreen extends Component {
-    constructor(props) {
-        super(props);
-
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            isOpen: false
-        };
-    }
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-    }
     render() {
         const BASE_URL = '#'
         return (
             <div>
-                <div>
-                    <div className="col-md-12 col-sm-12">
-                        <div className="row header">
-                            <div className="col-md-3 col-sm-12">
-                                <a href={BASE_URL}><img className="img-fluid logopdng" src="../../assets/yoofoo_logo.png" alt="logo"></img></a>
+                <div class="modal fade bd-example-modal-lg" id="RequestForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Request a quote</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div className="col-md-9 col-sm-12">
-                                <Navbar color="light" light expand="md">
-                                    <NavbarToggler onClick={this.toggle} />
-                                    <Collapse isOpen={this.state.isOpen} navbar>
-                                        <Nav className="ml-auto" navbar>
-                                            <UncontrolledDropdown nav inNavbar>
-                                                <DropdownToggle nav caret> SERVICES </DropdownToggle>
-                                                <DropdownMenu right>
-                                                    <DropdownItem href="/#/DistributedAgileAugmentation/"> DISTRIBUTED AGILE AUGMENTATION</DropdownItem>
-                                                    <DropdownItem href="/#/TechnologyProjectConsulting/"> TECHNOLOGY PROJECT CONSULTING </DropdownItem>
-                                                    <DropdownItem href="/#/DigitalTransformationStrategies/"> DIGITAL TRANSFORMATION STRATEGIES</DropdownItem>
-                                                </DropdownMenu>
-                                            </UncontrolledDropdown>
-                                            <NavItem>
-                                                <NavLink href="/#/practice-areas/">PRACTICE AREAS</NavLink>
-                                            </NavItem>
-                                            <UncontrolledDropdown nav inNavbar>
-                                                <DropdownToggle nav caret> INDUSTRIES </DropdownToggle>
-                                                <DropdownMenu right>
-                                                    <DropdownItem href="/#/Bfsi/"> BFSI </DropdownItem>
-                                                    <DropdownItem href="/#/LifeSciences/"> LIFE SCIENCES </DropdownItem>
-                                                    <DropdownItem href="/#/HighTech/"> HIGH TECH </DropdownItem>
-                                                </DropdownMenu>
-                                            </UncontrolledDropdown>
-                                            <NavItem>
-                                                <NavLink href="/#/ourdna/">OUR DNA</NavLink>
-                                            </NavItem>
-                                            <NavItem>
-                                                <NavLink href="/#/articles-events/">ARTICLES & EVENTS</NavLink>
-                                            </NavItem>
-                                            <NavItem>
-                                                <NavLink href="/#/about-us/">ABOUT</NavLink>
-                                            </NavItem>
-                                            <NavItem>
-                                                <NavLink href="/#/blog/">BLOG</NavLink>
-                                            </NavItem>
-                                            <NavItem>
-                                                <NavLink href="/#/contact-us/" activeclassname="selected">
-                                                    CONTACT US
-                                            </NavLink>
-                                            </NavItem>
-                                        </Nav>
-                                    </Collapse>
-                                </Navbar>
-                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-md-6 Requestfrom">
+                                        <div className="form-group formpdng">
+                                            <input type="name" className="form-control" placeholder="Name" name="c_name" required="" aria-required="true" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="name" className="form-control" placeholder="Phone" name="c_name" required="" aria-required="true" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="name" className="form-control" placeholder="Email" name="c_name" required="" aria-required="true" />
+                                        </div>
 
+                                        <div className="form-group">
+                                            <textarea type="text" className="form-control" placeholder="Message" required="" aria-required="true"></textarea>
+                                        </div>
+                                        <button type="submit" className="submitbtn">SUBMIT</button>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <img class="detail-img img-responsive" src="../../assets/Request-a-Quote.jpg" alt="Web Development" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Web Development</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> .Net MVC</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C#</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Java</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> VB</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> PHP</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Node.JS</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> HTML5 </li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> CSS</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Bootstrap</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Python</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> JQuery</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> AngularJS</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> WordPress</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Joomla</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            A business or enterprise website presents your business scope in detail to the viewers and promotes your objectives in each click. We have a passion to create and build websites as per your business objectives and transform your business needs in to a form a website. You will be explored to get the best and web friendly development services sinking with the latest trends of the market with our different range of solutions.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/webdev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mobile Development</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Ios</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Android</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Swift</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Objective-C</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> PhoneGap</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Apache Cordova</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Xamarin</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Titanium</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            For your app to succeed, you need a smart business strategy, a killer UI/UX design,
+                                            and a talented mobile development team. Good news - you've come to the right source.
+                                            We don't settle for good. We shoot for amazing, and that's where we can take you - if you’re ready.
+                                            Innovative mobile business strategies. Beautiful user experience designs. Powerful agile app development.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/mobiledev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block btn-pricing price-request smooth-scroll" onclick="closePricing();">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block btn-pricing quote-request" onclick="closePricing();"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Software Architecting & Engineering</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Development Life-Cycle Management (SDLC)</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Analysis</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Architecture & Design</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Integration</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Hardware Integration</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Embedded Systems</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C, C++ </li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> ASM</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C#</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Java</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Linux</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> OSx</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> iOS</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            Most companies have experienced the frustration of two or more software programs unable to share critical information. Lack of software interoperability is one of the biggest problems in business today. YooFoo has extensive experience in developing Enterprise Resource Planning (ERP) systems: systems that enable multiple, independent, software applications to communicate with each other throughout the organization. All of our software interfaces are created to meet or exceed industry standards.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/softwaredev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Data Services</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Infomatics</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data research</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data Analysis</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Reporting and Visualization</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data Migration</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data integration</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            Most companies have experienced the frustration of trying to merge data from more than one system, or data source, with disappointing results. These ‘silos’ of information create inefficiencies within an organization that result in cumbersome work-around and hours of wasted time. In fact lack of software interoperability is one of the biggest problems reported by businesses and government organizations, large and small, throughout the world today.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/data_management.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Design & Creatives</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Web design</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Graphics design</li>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> UI design</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            For those who have been hiding under the hood and never took a dive into the capacity of a web page; the essence of web designing goes beyond just embedding attractive layouts with the development code.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/design2.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Testing & Quality Analysis</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Selenium</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-8 blueboxR">
+                                        <div className="popuppara">
+                                            Software and IT organizations wanting to ensure high quality releases need to incorporate an effective quality assurance and testing program in their operations.
+                                        </div>
+                                        <div>
+                                            <img src="../../assets/testing1.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                        </div>
+                                        <div className="row btntmng">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <HeaderMenuscreen />
                     <div className="col-md-12 col-sm-12 paddinglr">
                         <div className="row">
                             <div className="col-md-12 col-sm-12">
@@ -381,57 +626,88 @@ export default class Homescreen extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-12">
-                                <Tabs>
-                                    <TabList>
-                                        <Tab>
-                                            <Slide top>
-                                                <div className="heading1">About <span className="heading2">Us</span></div>
-                                            </Slide>
-                                        </Tab>
-                                        <Tab>
-                                            <Slide bottom>
-                                                <div className="heading1">Contact <span className="heading2">Us</span></div>
-                                            </Slide>
-                                        </Tab>
-                                    </TabList>
+                                <div>
+                                    <Tabs>
+                                        <TabList>
+                                            <Tab>
+                                                <Slide top>
+                                                    <div className="heading1">About <span className="heading2">Us</span></div>
+                                                </Slide>
+                                            </Tab>
+                                            <Tab>
+                                                <Slide bottom>
+                                                    <div className="heading1">Contact <span className="heading2">Us</span></div>
+                                                </Slide>
+                                            </Tab>
+                                        </TabList>
 
-                                    <TabPanel>
+                                        <TabPanel>
 
 
-                                        <Fade right>
-                                            <div className="paragraphblue">A respected world leader in the provision of technology, software, and data solutions</div>
-                                            <div className="paragraphgray">YooFoo is an international information technology company that specializes in creating and maintaining innovative information technology, data,
+                                            <Fade right>
+                                                <div className="paragraphblue">A respected world leader in the provision of technology, software, and data solutions</div>
+                                                <div className="paragraphgray">YooFoo is an international information technology company that specializes in creating and maintaining innovative information technology, data,
                             and software solutions for a wide range of needs in both private business and public/governmental organization environments.</div>
-                                            <div className="explore"><a href="/#/about-us/">Read More About Us</a></div>
-                                        </Fade>
-                                    </TabPanel>
-                                    <TabPanel>
-                                        <Fade right>
-                                            <div className="col-md-10 col-sm-12 getintbg1">
-                                                <div className="contactsubh">Our team is ready to answer your queries</div>
+                                                <div className="explore"><a href="/#/about-us/">Read More About Us</a></div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <Fade right>
+                                                <div className="col-md-10 col-sm-12 getintbg1">
+                                                    <div className="contactsubh">Our team is ready to answer your queries</div>
 
-                                                <div className="form-group formpdng">
+                                                    <div className="form-group formpdng">
 
-                                                    <input type="name" className="form-control" placeholder="Name" name="c_name" required="" aria-required="true" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <input type="name" className="form-control" placeholder="Phone" name="c_name" required="" aria-required="true" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <input type="name" className="form-control" placeholder="Email" name="c_name" required="" aria-required="true" />
-                                                </div>
+                                                        <input type="name" className="form-control" placeholder="Name" name="c_name" required="" aria-required="true" />
+                                                    </div>
+                                                    <div className="form-group">
+                                                        <input type="name" className="form-control" placeholder="Phone" name="c_name" required="" aria-required="true" />
+                                                    </div>
+                                                    <div className="form-group">
+                                                        <input type="name" className="form-control" placeholder="Email" name="c_name" required="" aria-required="true" />
+                                                    </div>
 
-                                                <div className="form-group">
-                                                    <textarea type="text" className="form-control" placeholder="Message" required="" aria-required="true"></textarea>
+                                                    <div className="form-group">
+                                                        <textarea type="text" className="form-control" placeholder="Message" required="" aria-required="true"></textarea>
+                                                    </div>
+                                                    <button type="submit" className="submitbtn">SUBMIT</button>
                                                 </div>
-                                                <button type="submit" className="submitbtn">SUBMIT</button>
+                                            </Fade>
+                                        </TabPanel>
+                                    </Tabs>
+                                </div>
+                                <div className="clear"></div>
+                                <div className="col-sm-11 industry_p50">
+                                    <div className="trustedbyind_hdr">Industry Expertise</div>
+                                    <Slider autoplay={5000} className="slider-wrapper1">
+                                        {Industry_Expertise.map((item, index) => (
+                                            <div
+                                                key={index}
+                                                className="slider-content1"
+                                                autoplay={5}
+                                            >
+                                                <h1 className="Industry_subh1">{item.Industry_title}</h1>
+                                                <h1 className="Industry_subh2">{item.Industry_title1}</h1>
+                                                <div className="inner1">
+                                                    <div className="row Industry_row">
+                                                        <div className="Industry_div"><p className="Industry_des1_1">{item.Industry_des1_1}</p></div>
+                                                        <div className="Industry_div1"><p className="Industry_des1_2">{item.Industry_des1_2}</p></div>
+                                                        <div className="Industry_div"><p className="Industry_des1_3">{item.Industry_des1_3}</p></div>
+                                                        <div className="Industry_div1"><p className="Industry_des1_4">{item.Industry_des1_4}</p></div>
+                                                        <div className="Industry_div"><p className="Industry_des1_5">{item.Industry_des1_5}</p></div>
+                                                        <div className="Industry_div1"><p className="Industry_des1_6">{item.Industry_des1_6}</p></div>
+                                                        <p className="Industry_logo"> <img alt="profile" src={item.Industry_logo} /></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </Fade>
-                                    </TabPanel>
-                                </Tabs>
-
-
+                                        ))}
+                                    </Slider>
+                                </div>
                             </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-6 col-sm-6"></div>
+
                         </div>
                     </div>
 
@@ -507,6 +783,102 @@ export default class Homescreen extends Component {
                             </div>
                         </div>
                     </div>
+
+                    <div className="col-md-12 col-sm-12 paybg" id="pricing">
+                        <div className="container-fluid content_mrg">
+                            <Fade top>
+                                <div className="row">
+                                    <div className="col-md-12 Payasyougrow_bg">
+                                        <div>Pay as you grow</div>
+                                        <div className="Payasyougrow_bg1">
+                                            As your company grows, Yoofoo has the technical capabilities to provide you with top of the line services.
+                                            As a long term partner with us, we have the additional savings described below.
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+                            <div className="row">
+                                {/* <div className="col-sm-12">
+                                    <Fade left>
+                                        <div className="row">
+                                            <div className="hdrm">Monthly Service Packages
+                                            <div className="hdrm1">Discounts as much as</div>
+                                            </div>
+
+                                        </div>
+                                    </Fade>
+                                </div>
+                                <div className="col-sm-12">
+                                    <div className="row">
+                                        <div className="col-sm-12 planspadng">
+                                            <div class="plans-section">
+                                                <div class="plans-main">
+                                                    <LightSpeed left>
+                                                        <div>
+                                                            <div class="price-grid">
+                                                                <div class="price-block0 agile">
+                                                                    <div class="price-gd-top pric-clr1">
+                                                                        <i class="fa fa-cube payicons" aria-hidden="true"></i>
+                                                                        <h4>Basic</h4>
+                                                                        <span className="upto">UP TO</span>
+                                                                        <h3>20<span>%</span></h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </LightSpeed>
+                                                    <LightSpeed right>
+                                                        <div>
+                                                            <div class="price-grid ">
+                                                                <div class="price-block price-block02 agile">
+                                                                    <div class="price-gd-top pric-clr2">
+                                                                        <i class="fa fa-life-ring payicons hdrh3" aria-hidden="true"></i>
+                                                                        <h4 className="hdrh3">Standard</h4>
+                                                                        <span className="upto upto1">UP TO</span>
+                                                                        <h3 className="darkgry">30<span>%</span></h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </LightSpeed>
+                                                    <Flip left>
+                                                        <div>
+                                                            <div class="price-grid lost">
+                                                                <div class="price-block price-block2 agile">
+                                                                    <div class="price-gd-top pric-clr3">
+                                                                        <i class="fa fa-handshake payicons prohdr" aria-hidden="true"></i>
+                                                                        <h4 className="prohdr">Professional</h4>
+                                                                        <span className="upto1">UP TO</span>
+                                                                        <h3 className="hdrh3">40<span>%</span></h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Flip>
+                                                    <Flip right>
+                                                        <div>
+                                                            <div class="price-grid lost">
+                                                                <div class="price-block price-block3 agile">
+                                                                    <div class="price-gd-top pric-clr3">
+                                                                        <i class="fa fa-futbol payicons" aria-hidden="true"></i>
+                                                                        <h4>Ultimate</h4>
+                                                                        <span className="upto">UP TO</span>
+                                                                        <h3>50<span>%</span></h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Flip>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> */}
+                            </div>
+
+                        </div>
+                    </div>
                     <div className="col-md-12 col-sm-12">
                         <div className="container-fluid content_mrg">
                             <Fade top>
@@ -533,7 +905,10 @@ export default class Homescreen extends Component {
                                                             <h5 className="card-title cardhdr">Web Development</h5>
                                                             <p>Software and web development and integration A business or enterprise
                                         website presents your business scope in detail to the viewers and promotes your objectives in...</p>
-                                                            <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                            <div>
+                                                                <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal1">Read More
+                                                                <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -550,7 +925,8 @@ export default class Homescreen extends Component {
                                                             <h5 className="card-title cardhdr">Mobile Development</h5>
                                                             <p>Going mobile ? We got you covered. For your app to succeed, you need a smart business strategy,
                                                 a killer UI/UX design, and a talented mobile development team...</p>
-                                                            <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                            <div><a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal2">Read More
+                                                            <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -573,7 +949,8 @@ export default class Homescreen extends Component {
                                                         <div><i className="fa fa-cog icon1" aria-hidden="true"></i></div>
                                                         <h5 className="card-title cardhdr">Software Architecting & Engineering</h5>
                                                         <p>Tired of that house of cards system ? Our top architect and engineering team...</p>
-                                                        <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                        <div><a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal3">Read More
+                                                        <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -589,7 +966,8 @@ export default class Homescreen extends Component {
                                                         <h5 className="card-title cardhdr">Data Services</h5>
                                                         <p>Do more with your data than just analytics. Look into the future with big data and infomatics.
                                                     Most companies have experienced the frustration of... </p>
-                                                        <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                        <div><a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal4">Read More
+                                                        <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -612,7 +990,8 @@ export default class Homescreen extends Component {
                                                         <h5 className="card-title cardhdr">Design & Creatives</h5>
                                                         <p>Looking for some of the most creative minds? Well, they are here.
                                                     For those who have been hiding under the hood and never took a dive into the capacity of... </p>
-                                                        <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                        <div><a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal5">Read More
+                                                        <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -628,7 +1007,8 @@ export default class Homescreen extends Component {
                                                         <h5 className="card-title cardhdr">Testing & Quality Analysis</h5>
                                                         <p>Comprehensive software testing & QA resources. Software and IT organizations wanting
                                                     to ensure high quality releases need to incorporate...</p>
-                                                        <div><a href={BASE_URL}>Read More <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
+                                                        <div><a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal6">Read More
+                                                        <i className="fa fa-angle-double-right readmore" aria-hidden="true"></i></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -646,7 +1026,7 @@ export default class Homescreen extends Component {
                                     <div className="row">
                                         <Flip left>
                                             <div className="col-md-5 ">
-                                                <div className="row">                                                    
+                                                <div className="row">
                                                     <div className="col-md-7">
                                                         <div className="heading1">Testimonials</div>
                                                         <div className="testimonial_sub">See What People are Saying</div>
@@ -709,41 +1089,16 @@ export default class Homescreen extends Component {
                     </div>
                     <div className="col-md-12 col-sm-12 industryExbg">
                         <div className="row">
-                            <Fade left>
+                            {/* <Fade left>
                                 <div className="col-md-5 col-sm-12 trustDivpdng">
                                     <div className="row">
                                         <div className="col-md-1 col-sm-12"></div>
-                                        <div className="col-md-11 col-sm-12">
-                                            <div className="trustedbyind_hdr">Industry Expertise</div>
-                                            <Slider autoplay={5000} className="slider-wrapper1">
-                                                {Industry_Expertise.map((item, index) => (
-                                                    <div
-                                                        key={index}
-                                                        className="slider-content1"
-                                                        autoplay={5}
-                                                    >
-                                                        <h1 className="Industry_subh1">{item.Industry_title}</h1>
-                                                        <h1 className="Industry_subh2">{item.Industry_title1}</h1>
-                                                        <div className="inner1">
-                                                            <div className="row Industry_row">
-                                                                <div className="Industry_div"><p className="Industry_des1_1">{item.Industry_des1_1}</p></div>
-                                                                <div className="Industry_div1"><p className="Industry_des1_2">{item.Industry_des1_2}</p></div>
-                                                                <div className="Industry_div"><p className="Industry_des1_3">{item.Industry_des1_3}</p></div>
-                                                                <div className="Industry_div1"><p className="Industry_des1_4">{item.Industry_des1_4}</p></div>
-                                                                <div className="Industry_div"><p className="Industry_des1_5">{item.Industry_des1_5}</p></div>
-                                                                <div className="Industry_div1"><p className="Industry_des1_6">{item.Industry_des1_6}</p></div>
-                                                                <p className="Industry_logo"> <img alt="profile" src={item.Industry_logo} /></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </Slider>
-                                        </div>
+
                                     </div>
                                 </div>
-                            </Fade>
+                            </Fade> */}
                             <Fade right>
-                                <div className="col-md-7 col-sm-12 NewsDivbg">
+                                <div className="col-md-12 col-sm-12 NewsDivbg">
                                     <div className="row">
                                         <div className="col-md-1"></div>
                                         <div className="col-md-11">
@@ -770,7 +1125,7 @@ export default class Homescreen extends Component {
                             </Fade>
                         </div>
                     </div>
-                     <Footerscreen />                                                
+                    <Footerscreen />
                     <div>
                         <ScrollUpButton />
                     </div>

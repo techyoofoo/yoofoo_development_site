@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import { Zoom, Fade, Slide, Bounce } from 'react-reveal';
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../styles/styles.css';
 
 export default class Footerscreen extends Component {
@@ -73,7 +72,10 @@ export default class Footerscreen extends Component {
                         <div className="row footercopy">
                             <div className="col-md-3"></div>
                             <div className="col-md-5">Copyright © {new Date().getFullYear()} YooFoo All Rights Reserved</div>
-                            <div className="col-md-4">Follow Us : <a href={BASE_URL}><i className='fab fa-facebook-f'></i></a> <a href={BASE_URL}><i className='fab fa-linkedin-in'></i></a></div>
+                            <div className="col-md-4">Follow Us :
+                                <a href="https://www.facebook.com/pages/Yoofoo/258692607528105" target="_blank"><i className='fab fa-facebook-f'></i></a>
+                                <a href="https://www.linkedin.com/company/yoofoo-com-llc" target="_blank"><i className='fab fa-linkedin-in'></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
