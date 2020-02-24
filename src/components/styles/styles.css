@@ -128,17 +128,21 @@ h3{
     padding-bottom: 50px;
 }
 .headingAbout{
-    padding-left: 10px;
-    font-size: 40px;
-    color: #004f96;
+    padding-left: 15px;
+    font-size: 50px;
+    color: #4c4c4c;
     text-align: left;
+    font-weight: bold;
     font-family:'ProximaNovaRegular';
+    text-transform: uppercase;
 }
 .headingAbout1{
-    color: #5db4de;
-    font-size: 40px;
+    color: #ff8873;
+    font-size: 50px;
     text-align: left;
+    font-weight: bold;
     font-family:'ProximaNovaRegular';
+    text-transform: uppercase;
 }
 .heading2{
     color: #5db4de;
@@ -205,24 +209,24 @@ h3{
     padding-right: 50px;
 }
 .paragraphgray{
-    font-size: 23px;
+    font-size: 20px;
     color: #202227;
-    line-height: 40px;
+    line-height: 35px;
     text-align: left;
-    padding-top: 20px;  
+    padding-top: 8px;  
     padding-right: 50px;
 }
 .explore{
-    font-size: 20px;
+    font-size: 18px;
     color: #1b62a1;
     text-align: left;   
-    padding-top: 30px;
+    padding-top: 15px;
     text-decoration: underline;
 }
 .roundedbox, .roundedbox1, .roundedbox2, .roundedbox3{
-    margin: 30px 8px 8px 8px;
-    width: 155px;
-    height: 160px;
+    margin: 30px 5px 5px 5px;
+    width: 140px;
+    height: 150px;
     border-radius: 20px 20px 20px 20px;
 -moz-border-radius: 20px 20px 20px 20px;
 -webkit-border-radius: 20px 20px 20px 20px;
@@ -330,7 +334,7 @@ cursor: pointer;
     color: #fff;
     text-align: left;
     font-family: 'ProximaNovaRegular';
-    font-size: 16px;
+    font-size: 14px;
 }
 .clientNo4{
     color: #4ca8d4;
@@ -471,6 +475,14 @@ cursor: pointer;
     padding-left: 50px;
     padding-top: 50px;
 }
+.image {    
+    transition: .5s ease;
+    backface-visibility: hidden;    
+  }
+  .cardpdng:hover .image {
+    opacity: 0.5;
+  }
+  
 .icon1{
     font-size: 35px;
     color: #1b62a1;
@@ -491,6 +503,7 @@ cursor: pointer;
     background-position:center;
     background: cover;
     min-height: 650px;
+    padding-top: 50px;
 }
 .centerpdng{
     padding-left: 50px;
@@ -629,6 +642,14 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
     display: inline-block;
     z-index:990;
 }
+.img-thumbnail {
+    padding: -0.75rem !important;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
 .testimonial_hdr1, .testimonial_hdr2, .headerthanks{
     font-size: 20px;
     color: #fff;
@@ -667,15 +688,15 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
     margin: 0;
 }
 .trustedbyind_hdr, .trustedbyind_hdr1{
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'ProximaNovaRegular';
     text-align: left;
     line-height: 40px;
     padding-top: 0px;
-    padding-left: 40px;
+    padding-left: 23px;
 }
 .trustedbyind_hdr1{
-    color: #135ca0;
+    color: #363636;
     padding-top: 40px;
     padding-left: 30px;
 }
@@ -710,7 +731,7 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 .Industry_div{
     float: left;
-    width: 315px;
+    width: 300px;
 }
 .Industry_logo{
     width: 250px;
@@ -724,7 +745,7 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 padding-left: 25px;
 }
 .Industry_subh, .Industry_subh1, .Industry_p, .Industry_subh2{
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     text-align: left;
     padding-top: 20px;
@@ -734,14 +755,14 @@ padding-left: 25px;
 }
 .Industry_subh1{
     color: #494d51;
-    font-size: 23px;
-    padding-left: 60px !important;
+    font-size: 20px;
+    padding-left: 40px !important;
     font-family: 'ProximaNovaRegular';
 }
 .Industry_subh2{
     padding-top: 5px;
     color: #004f96;
-    padding-left: 60px !important;
+    padding-left: 40px !important;
 }
 .Industry_p{
     font-size: 18px;
@@ -1181,7 +1202,7 @@ button:hover {
   
   .nextButton {
     position: absolute;
-    top: 55%;
+    top: 60%;
     right: 0;
     
   }
@@ -1630,6 +1651,14 @@ button:hover {
     padding: 5px; 
     border-bottom: solid 1px #52b3e1;
 }
+.popuplist ul li a{    
+    text-align: left;  
+    padding: 5px; 
+    color: #fff;
+}
+.popuplist ul li a:hover{      
+    color: #ffd800;
+}
 .okicon, .checkicon{
     font-size: 12px;
     color: #fff;
@@ -1674,7 +1703,7 @@ button:hover {
     font-weight: bold;
 }
 .industry_p50{
-    padding-top: 50px;
+    padding-top: 35px;
     height: 400px;
 }
 .paytopp{
@@ -1785,8 +1814,45 @@ button:hover {
     text-align: left;
     font-weight: normal;
 }
-
-
+.Distributed_para{
+    color: #266fb0;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+}
+.ousrser_img{
+    padding-bottom: 50px;
+}
+.modal_header1{
+    background-color: #3da5d6 !important;
+    color: #fff !important;
+}
+.lefthdrbluline, .lefthdrbluline1{
+    width: 7px;
+    height: 125px;
+    float: left;
+    margin-top: 10px;
+    background-color: #3da5d6;
+}
+.lefthdrbluline1{
+    height: 190px;
+}
+.para1{
+    font-size: 16px;
+    color: #000000 !important;
+    text-align: left;
+    padding-top: 0;
+    padding-right: 150px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.righthdrdiv{
+    float: left;
+    padding-left: 20px;
+}
+.paddingtop{
+    padding-top: 50px;
+    padding-bottom: 00px;
+}
 
 
 
@@ -1926,6 +1992,9 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
         text-align: center;
         padding: 15px;
     }
+    .para1{       
+        padding-right: 50px;        
+    }
   }
   
   @media (max-height: 600px) {
@@ -1958,11 +2027,11 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
     /* For portrait layouts only */
     .roundedbox, .roundedbox1, .roundedbox2, .roundedbox3{
         margin: 5px;
-        width: 130px;
+        width: 120px;
         height: 130px;
     }
     .clientNo, .clientNo1, .clientNo2, .clientNo3, .clientNo4, .clientNo5, .clientNo6, .clientNo7{
-        font-size: 15px;
+        font-size: 14px;
     }
     .clientNo1, .clientNo3, .clientNo4, .clientNo5, .clientNo6, .clientNo7{
         padding-top: 35px;

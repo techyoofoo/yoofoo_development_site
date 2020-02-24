@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import scrollToComponent from 'react-scroll-to-component';
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import { Zoom, Fade, Flip, Slide, Bounce, LightSpeed, Reveal } from 'react-reveal';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import ReactTooltip from 'react-tooltip';
@@ -112,7 +114,7 @@ const content_news = [
 
 const content_Testimonials = [
     {
-        image1: '../assets/jeffb.png',
+        image1: '../assets/profile_img/testimonial-1-jeffb.png',
         title: '2015 Global Big Data Competition',
         description: '- Brad Stone',
         company: 'By Global Data Utah',
@@ -121,7 +123,7 @@ const content_Testimonials = [
 
     },
     {
-        image1: '../assets/danielzaldivar.png',
+        image1: '../assets/profile_img/testimonial-2.jpg',
         title: 'Amazing Partner!',
         description: '- Vince Romney',
         company: 'By Foreveegreen International',
@@ -130,7 +132,7 @@ const content_Testimonials = [
 
     },
     {
-        image1: '../assets/jeff1.png',
+        image1: '../assets/profile_img/danielzaldivar.png',
         title: 'Thanks!',
         description: '- Daniel Zaldivar',
         company: 'By Unicity International',
@@ -141,6 +143,22 @@ const content_Testimonials = [
 ];
 
 export default class Homescreen extends Component {
+    componentDidMount() {
+        scrollToComponent(this.Homescreen, { offset: 0, align: 'top', duration: 500, ease: 'inCirc' });
+    }
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            isOpen: false
+        };
+    }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
     render() {
         const BASE_URL = '#'
         return (
@@ -215,7 +233,7 @@ export default class Homescreen extends Component {
                                             A business or enterprise website presents your business scope in detail to the viewers and promotes your objectives in each click. We have a passion to create and build websites as per your business objectives and transform your business needs in to a form a website. You will be explored to get the best and web friendly development services sinking with the latest trends of the market with our different range of solutions.
                                         </div>
                                         <div>
-                                            <img src="../../assets/webdev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/webdev.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -264,7 +282,7 @@ export default class Homescreen extends Component {
                                             Innovative mobile business strategies. Beautiful user experience designs. Powerful agile app development.
                                         </div>
                                         <div>
-                                            <img src="../../assets/mobiledev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/mobiledev.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -315,7 +333,7 @@ export default class Homescreen extends Component {
                                             Most companies have experienced the frustration of two or more software programs unable to share critical information. Lack of software interoperability is one of the biggest problems in business today. YooFoo has extensive experience in developing Enterprise Resource Planning (ERP) systems: systems that enable multiple, independent, software applications to communicate with each other throughout the organization. All of our software interfaces are created to meet or exceed industry standards.
                                         </div>
                                         <div>
-                                            <img src="../../assets/softwaredev.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/softwaredev.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -358,7 +376,7 @@ export default class Homescreen extends Component {
                                             Most companies have experienced the frustration of trying to merge data from more than one system, or data source, with disappointing results. These ‘silos’ of information create inefficiencies within an organization that result in cumbersome work-around and hours of wasted time. In fact lack of software interoperability is one of the biggest problems reported by businesses and government organizations, large and small, throughout the world today.
                                         </div>
                                         <div>
-                                            <img src="../../assets/data_management.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/data_management.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -398,7 +416,7 @@ export default class Homescreen extends Component {
                                             For those who have been hiding under the hood and never took a dive into the capacity of a web page; the essence of web designing goes beyond just embedding attractive layouts with the development code.
                                         </div>
                                         <div>
-                                            <img src="../../assets/design2.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/design2.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -436,7 +454,7 @@ export default class Homescreen extends Component {
                                             Software and IT organizations wanting to ensure high quality releases need to incorporate an effective quality assurance and testing program in their operations.
                                         </div>
                                         <div>
-                                            <img src="../../assets/testing1.jpg" class="img-thumbnail col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/testing1.jpg" class="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
                                             <div class="col-md-1"></div>
@@ -454,9 +472,151 @@ export default class Homescreen extends Component {
                     </div>
                 </div>
 
+                <div class="modal fade bd-example-modal-lg" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header modal_header1">
+                                <h5 class="modal-title" id="exampleModalLabel">Distributed Agile Augmentation</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">                                   
+                                    <div className="col-sm-4 blueboxL popuplist">
+                                        <ul>
+                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> On Shore </a></li>
+                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> Off Shore </a></li>
+                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> On Premise </a></li>                                                                                      
+                                        </ul>
+                                    </div>                                    
+                                    <div className="col-sm-8">
+                                        <p className="Distributed_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries.</p>
+                                            <div>
+                                    <img src="../../assets/DistributedAgileAugmentation.jpg" className="img-fluid ousrser_img col-sm-12" alt="Distributed Agile Augmentation
+"></img>
+                                    </div>
+                                    </div>
+                                  
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header modal_header1">
+                                <h5 class="modal-title" id="exampleModalLabel">Technology Project Consulting</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <p className="Distributed_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div className="">
+                                    <img src="../../assets/TechnologyProjectConsulting.jpg" className="img-fluid ousrser_img col-sm-8" alt="Distributed Agile Augmentation
+"></img>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header modal_header1">
+                                <h5 class="modal-title" id="exampleModalLabel">Digital Transformation Strategies</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <p className="Distributed_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div className="">
+                                    <img src="../../assets/ourdna.jpg" className="img-fluid ousrser_img col-sm-8" alt="Distributed Agile Augmentation
+"></img>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div>
-                    <HeaderMenuscreen />
+                    {/* <HeaderMenuscreen /> */}
+                    <div className="col-md-12 col-sm-12">
+                    <div className="row header">
+                        <div className="col-md-3 col-sm-3">
+                            <a href={BASE_URL}><img className="img-fluid logopdng" src="../../assets/yoofoo_logo.png" alt="logo"></img></a>
+                        </div>
+
+                        <div className="col-md-9 col-sm-12">
+                            <Navbar color="light" light expand="md">
+                                <NavbarToggler onClick={this.toggle} />
+                                <Collapse isOpen={this.state.isOpen} navbar>
+                                    <Nav className="ml-auto" navbar>
+                                        <UncontrolledDropdown nav inNavbar>
+                                            <DropdownToggle nav caret> SERVICES </DropdownToggle>
+                                            <DropdownMenu right>
+                                                <DropdownItem onClick={() => scrollToComponent(this.DistributedAgile, { offset: 0, align: 'top', duration: 500 })}> Distributed Agile Augmentation </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.Technologyproject, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> Technology Project Consulting </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.DigitalTrans, { offset: 0, align: 'top', duration: 500, ease: 'inCirc' })}> Digital Transformation Strategies</DropdownItem>
+                                            </DropdownMenu>
+                                        </UncontrolledDropdown>
+                                        <NavItem>
+                                            <NavLink onClick={() => scrollToComponent(this.Practiceareas, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}>PRACTICE AREAS</NavLink>
+                                        </NavItem>
+                                        <UncontrolledDropdown nav inNavbar>
+                                            <DropdownToggle nav caret> INDUSTRIES </DropdownToggle>
+                                            <DropdownMenu right>
+                                                <DropdownItem href="/#/Bfsi/"> BFSI </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.LifeSciences, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> LIFE SCIENCES </DropdownItem>
+                                                <DropdownItem href="/#/HighTech/"> HIGH TECH </DropdownItem>
+                                            </DropdownMenu>
+                                        </UncontrolledDropdown>
+                                        {/* <NavItem>
+                                            <NavLink href="/#/ourdna/">OUR DNA</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink href="/#/articles-events/">ARTICLES & EVENTS</NavLink>
+                                        </NavItem> */}
+                                        <NavItem>
+                                            <NavLink onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 500 })}>ABOUT</NavLink>
+                                        </NavItem>
+                                        {/* <NavItem>
+                                            <NavLink href="/#/blog/">BLOG</NavLink>
+                                        </NavItem> */}
+                                        <NavItem>
+                                            <NavLink href="/#/contact-us/" className="menuactive">CONTACT US</NavLink>
+                                        </NavItem>
+                                    </Nav>
+                                </Collapse>
+                            </Navbar>
+                        </div>
+
+                    </div>
+                </div>
                     <div className="col-md-12 col-sm-12 paddinglr">
                         <div className="row">
                             <div className="col-md-12 col-sm-12">
@@ -626,12 +786,12 @@ export default class Homescreen extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-12">
-                                <div>
+                                <div className="About">
                                     <Tabs>
                                         <TabList>
                                             <Tab>
                                                 <Slide top>
-                                                    <div className="heading1">About <span className="heading2">Us</span></div>
+                                                    <div className="heading1" ref={(section) => { this.About = section; }}>About <span className="heading2">Us</span></div>
                                                 </Slide>
                                             </Tab>
                                             <Tab>
@@ -677,9 +837,9 @@ export default class Homescreen extends Component {
                                     </Tabs>
                                 </div>
                                 <div className="clear"></div>
-                                <div className="col-sm-12 industry_p50">
+                                <div className="col-sm-12 col-md-8 industry_p50">
                                     <div className="trustedbyind_hdr">Industry Expertise</div>
-                                    <Slider autoplay={5000} className="slider-wrapper1">
+                                    <Slider autoplay={5000} className="slider-wrapper11">
                                         {Industry_Expertise.map((item, index) => (
                                             <div
                                                 key={index}
@@ -691,11 +851,17 @@ export default class Homescreen extends Component {
                                                 <div className="inner1">
                                                     <div className="row Industry_row">
                                                         <div className="Industry_div"><p className="Industry_des1_1">{item.Industry_des1_1}</p></div>
+                                                        <div className="clear"></div>
                                                         <div className="Industry_div1"><p className="Industry_des1_2">{item.Industry_des1_2}</p></div>
+                                                        <div className="clear"></div>
                                                         <div className="Industry_div"><p className="Industry_des1_3">{item.Industry_des1_3}</p></div>
+                                                        <div className="clear"></div>
                                                         <div className="Industry_div1"><p className="Industry_des1_4">{item.Industry_des1_4}</p></div>
+                                                        <div className="clear"></div>
                                                         <div className="Industry_div"><p className="Industry_des1_5">{item.Industry_des1_5}</p></div>
+                                                        <div className="clear"></div>
                                                         <div className="Industry_div1"><p className="Industry_des1_6">{item.Industry_des1_6}</p></div>
+                                                        <div className="clear"></div>
                                                         <p className="Industry_logo"> <img alt="profile" src={item.Industry_logo} /></p>
                                                     </div>
                                                 </div>
@@ -714,6 +880,15 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12">
                         <div className="container-fluid content_mrg">
                             <Fade top>
+                            {/* <div className="row"> 
+                            <div>
+                            <div className="lefthdrbluline"></div>                           
+                            </div>
+                            <div className="headingAbout">What We  <span className="headingAbout1">Do</span>
+                            <p className="para1">We build to your business needs, <br></br>asking questions before providing answers.</p>
+                            </div>
+                            </div>  */}
+
                                 <div className="row">
                                     <div className="col-md-3 whatwedo_hdr">What We Do</div>
                                     <div className="col-md-9 whatwedo_hd1">We build to your business needs, asking questions before providing answers.</div>
@@ -787,7 +962,16 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12 pay_pdng">
                         <div className="row paytopp">
                             <div className="col-sm-6">
-                                <div className="row">
+                                 <div className=""> 
+                            <div>
+                            <div className="lefthdrbluline1"></div>                           
+                            </div>
+                            <div className="headingAbout">PAY AS YOU  <span className="headingAbout1">GROW</span>
+                            <p className="para1">As your company grows, Yoofoo has the technical capabilities to provide you with top of the line services. 
+                            As a long term partner with us, we have the additional savings described below. <br></br>asking questions before providing answers.</p>
+                            </div>
+                            </div> 
+                                {/* <div className="row">
                                     <div className="col-sm-1 blueline"></div>
                                     <div className="col-sm-11 paddingleft0">
                                         <p className="hdrm">PAY AS YOU <span className="hdrm1">GROW</span></p>
@@ -796,7 +980,7 @@ export default class Homescreen extends Component {
                                             As a long term partner with us, we have the additional savings described below.
                                     </p>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="row hpatop">
                                     <div className="col-sm-12 monthlyhdr">Monthly Service Packages</div>
                                     <div className="col-sm-4 monthlydis">Discount as much as</div>
@@ -859,9 +1043,10 @@ export default class Homescreen extends Component {
                             <div className="row">
                                 <div className="col-md-4 col-sm-12">
                                     <div className="row">
-                                        <div className="cardpdng">
+                                        <div className="cardpdng"  ref={(section) => { this.DistributedAgile = section; }}>
                                             <LightSpeed left>
-                                                <img className="" src="../../assets/ourservice.jpg" alt="ourservice"></img>
+                                                <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal7">
+                                            <img className="image" src="../../assets/ourservice.jpg" alt="ourservice"></img></a>
                                             </LightSpeed>
                                         </div>
                                         <div className="cardpdng">
@@ -904,9 +1089,10 @@ export default class Homescreen extends Component {
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-sm-12">
-                                    <div className="cardpdng">
+                                    <div className="cardpdng" ref={(section) => { this.Technologyproject = section; }}>
                                         <Flip>
-                                            <img className="" src="../../assets/ourservice1.jpg" alt="ourservice1"></img>
+                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal8">
+                                            <img className="image" src="../../assets/ourservice1.jpg" alt="ourservice"></img></a>                                           
                                         </Flip>
                                     </div>
                                     <div className="cardpdng">
@@ -944,9 +1130,10 @@ export default class Homescreen extends Component {
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-sm-12">
-                                    <div className="cardpdng">
+                                    <div className="cardpdng technology" ref={(section) => { this.DigitalTrans = section; }}>
                                         <LightSpeed right>
-                                            <img className="" src="../../assets/ourservice2.jpg" alt="ourservice2"></img>
+                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal9">
+                                            <img className="image" src="../../assets/ourservice2.jpg" alt="DigitalTransformation Strategies"></img></a>                   
                                         </LightSpeed>
                                     </div>
                                     <div className="cardpdng">
@@ -988,6 +1175,55 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
 
+                    <div className="col-md-12 col-sm-12 paddingtop">
+                        <div className="container-fluid">
+                        <div className="row innerContent" ref={(section) => { this.Practiceareas = section; }}>                        
+                            <div className="row">                     
+                            <div className="col-md-7">
+                            <div>
+                            <div className="lefthdrbluline"></div>                           
+                            </div>
+                            <div className="headingAbout">Practice <span className="headingAbout1">Areas</span>
+                            <p className="para1">Broad and Deep Technical Software Development <br></br> Experts to Create to Enterprise-Level Applications</p>
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            <div className="col-md-5">
+                            <img className="img-thumbnail rounded" src="../../assets/practiceareas.jpg" alt="Practice Areas"></img>
+                            </div>
+                            </div>    
+                       
+                    </div>
+                        </div>
+                    </div>
+
+                    <div className="col-md-12 col-sm-12 paddingtop">
+                        <div className="container-fluid">
+                        <div className="row innerContent" ref={(section) => { this.LifeSciences = section; }}>                        
+                            <div className="row">   
+                            <div className="col-md-5">
+                            <img className="img-thumbnail rounded" src="../../assets/LifeSciences.jpg" alt="Practice Areas"></img>
+                            </div>                  
+                            <div className="col-md-7">
+                            <div>
+                            <div className="lefthdrbluline"></div>                           
+                            </div>
+                            <div className="headingAbout">LIFE <span className="headingAbout1">SCIENCES</span>
+                            <p className="para1">Broad and Deep Technical Software Development <br></br> Experts to Create to Enterprise-Level Applications</p>
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                           
+                            </div>    
+                       
+                    </div>
+                        </div>
+                    </div>
+
                     <div className="col-md-12 col-sm-12">
                         <div className="container-fluid">
                             <div className="row centerpdng">
@@ -1012,7 +1248,7 @@ export default class Homescreen extends Component {
                                                                     autoplay={5}
                                                                 >
                                                                     <div className="inner2">
-                                                                        <p className="profileimg"> <img className="rounded-circle" alt="profile" src={item.image1} /></p>
+                                                                        <p className="profileimg"> <img className="rounded-circle rounded img-thumbnail" alt="profile" src={item.image1} /></p>
                                                                         <h1 className="testimonial_hdr1">{item.title}</h1>
                                                                         <p className="testimonial_hdr2">{item.description}</p>
                                                                         <p className="testimonial_hdr2">{item.company}</p>
@@ -1069,8 +1305,7 @@ export default class Homescreen extends Component {
                             <Fade right>
                                 <div className="col-md-12 col-sm-12 NewsDivbg">
                                     <div className="row">
-                                        <div className="col-md-1"></div>
-                                        <div className="col-md-11">
+                                        <div className="col-md-12">
                                             <div className="trustedbyind_hdr1">News</div>
                                             <Slider autoplay={5000} className="slider-wrapper1">
                                                 {content_news.map((item, index) => (
