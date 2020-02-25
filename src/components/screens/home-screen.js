@@ -965,6 +965,7 @@ export default class Homescreen extends Component {
 
                     <div className="col-md-12 col-sm-12 pay_pdng">
                         <div className="row paytopp">
+                        <Fade left>
                             <div className="col-sm-6">
                            <div> 
                             <div>
@@ -1020,9 +1021,11 @@ export default class Homescreen extends Component {
                                     </div>
                                 </div>
                             </div>
-
+                            </Fade>  
                             <div className="col-sm-6">
+                                 <LightSpeed right>
                                 <img className="img-fluid" src="../../assets/payasugrow_rbg.png" alt="pay as u grow"></img>
+                                </LightSpeed>  
                             </div>
                         </div>
                     </div>
@@ -1187,7 +1190,8 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12 paddingtop">
                         <div className="container-fluid">
                         <div className="row innerContent" ref={(section) => { this.Practiceareas = section; }}>                        
-                            <div className="row">                     
+                            <div className="row">  
+                            <Fade left>               
                             <div className="col-md-7">
                             <div>
                             <div className="lefthdrbluline"></div>                           
@@ -1199,8 +1203,11 @@ export default class Homescreen extends Component {
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
+                        </Fade>
                             <div className="col-md-5">
+                            <Fade right>
                             <img className="img-thumbnail rounded" src="../../assets/practiceareas.jpg" alt="Practice Areas"></img>
+                            </Fade>
                             </div>
                             </div>                        
                       </div>
@@ -1211,8 +1218,11 @@ export default class Homescreen extends Component {
                         <div className="row innerContent" ref={(section) => { this.Bfsi = section; }}>                        
                             <div className="row">   
                             <div className="col-md-5">
+                            <Fade top>
                             <img className="img-thumbnail rounded" src="../../assets/Bfsi.jpg" alt="Practice Areas"></img>
-                            </div>                  
+                           </Fade>
+                            </div>    
+                            <Fade bottom>
                             <div className="col-md-7">
                             <div>
                             <div className="lefthdrbluline"></div>                           
@@ -1224,6 +1234,7 @@ export default class Homescreen extends Component {
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
+                            </Fade>
                             </div>                       
                         </div>
                         </div>
@@ -1232,7 +1243,8 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12 paddingtop">
                         <div className="container-fluid">
                         <div className="row innerContent" ref={(section) => { this.LifeSciences = section; }}>                        
-                            <div className="row">                                        
+                            <div className="row">    
+                            <Fade left>                                    
                             <div className="col-md-7">
                             <div>
                             <div className="lefthdrbluline"></div>                           
@@ -1244,8 +1256,11 @@ export default class Homescreen extends Component {
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
+                            </Fade>
                             <div className="col-md-5">
+                            <Fade right>
                             <img className="img-thumbnail rounded" src="../../assets/LifeSciences.jpg" alt="Practice Areas"></img>
+                           </Fade>
                             </div>      
                             </div>                       
                         </div>
