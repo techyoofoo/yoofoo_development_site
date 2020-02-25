@@ -35,22 +35,22 @@ export default class HeaderMenuscreen extends Component {
                                 <Collapse isOpen={this.state.isOpen} navbar>
                                     <Nav className="ml-auto" navbar>
                                         <UncontrolledDropdown nav inNavbar>
-                                            <DropdownToggle nav caret> SERVICES </DropdownToggle>
+                                            <DropdownToggle nav caret> Services </DropdownToggle>
                                             <DropdownMenu right>
-                                                <DropdownItem href="/#/DistributedAgileAugmentation/"> DISTRIBUTED AGILE AUGMENTATION</DropdownItem>
-                                                <DropdownItem href="/#/TechnologyProjectConsulting/"> TECHNOLOGY PROJECT CONSULTING </DropdownItem>
-                                                <DropdownItem href="/#/DigitalTransformationStrategies/"> DIGITAL TRANSFORMATION STRATEGIES</DropdownItem>
+                                                <DropdownItem href="/#/"> Distributed Agile Augmentation</DropdownItem>
+                                                <DropdownItem href="/#/"> Technology Project Consulting </DropdownItem>
+                                                <DropdownItem href="/#/"> Digital Transformation Strategies</DropdownItem>
                                             </DropdownMenu>
                                         </UncontrolledDropdown>
                                         <NavItem>
-                                            <NavLink href="/#/practice-areas/">PRACTICE AREAS</NavLink>
+                                            <NavLink href="/#/">Practice Areas</NavLink>
                                         </NavItem>
                                         <UncontrolledDropdown nav inNavbar>
-                                            <DropdownToggle nav caret> INDUSTRIES </DropdownToggle>
+                                            <DropdownToggle nav caret> Industries </DropdownToggle>
                                             <DropdownMenu right>
-                                                <DropdownItem href="/#/Bfsi/"> BFSI </DropdownItem>
-                                                <DropdownItem href="/#/LifeSciences/"> LIFE SCIENCES </DropdownItem>
-                                                <DropdownItem href="/#/HighTech/"> HIGH TECH </DropdownItem>
+                                                <DropdownItem href="/#/"> BFSI </DropdownItem>
+                                                <DropdownItem href="/#/"> Life Sciences </DropdownItem>
+                                                <DropdownItem href="/#/"> High Tech </DropdownItem>
                                             </DropdownMenu>
                                         </UncontrolledDropdown>
                                         {/* <NavItem>
@@ -60,13 +60,13 @@ export default class HeaderMenuscreen extends Component {
                                             <NavLink href="/#/articles-events/">ARTICLES & EVENTS</NavLink>
                                         </NavItem> */}
                                         <NavItem>
-                                            <NavLink href="/#/about-us/">ABOUT</NavLink>
+                                            <NavLink href="/#/">About</NavLink>
                                         </NavItem>
                                         {/* <NavItem>
                                             <NavLink href="/#/blog/">BLOG</NavLink>
                                         </NavItem> */}
                                         <NavItem>
-                                            <NavLink href="/#/contact-us/" className="menuactive">CONTACT US</NavLink>
+                                            <NavLink href="/#/contact-us/" className="menuactive">Contact Us</NavLink>
                                         </NavItem>
                                     </Nav>
                                 </Collapse>

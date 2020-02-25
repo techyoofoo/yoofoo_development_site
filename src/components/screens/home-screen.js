@@ -12,7 +12,7 @@ import '../styles/fontstyle.css';
 import '../styles/styles.css';
 import '../styles/slidernews.css';
 import Footerscreen from '../screens/footer';
-import HeaderMenuscreen from '../screens/headermenu';
+// import HeaderMenuscreen from '../screens/headermenu';
 
 const content = [
     {
@@ -163,16 +163,16 @@ export default class Homescreen extends Component {
         const BASE_URL = '#'
         return (
             <div>
-                <div class="modal fade bd-example-modal-lg" id="RequestForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Request a quote</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="RequestForm" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Request a quote</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-md-6 Requestfrom">
                                         <div className="form-group formpdng">
@@ -191,7 +191,7 @@ export default class Homescreen extends Component {
                                         <button type="submit" className="submitbtn">SUBMIT</button>
                                     </div>
                                     <div className="col-md-6">
-                                        <img class="detail-img img-responsive" src="../../assets/Request-a-Quote.jpg" alt="Web Development" />
+                                        <img className="detail-img img-responsive" src="../../assets/Request-a-Quote.jpg" alt="Web Development" />
                                     </div>
                                 </div>
                             </div>
@@ -199,33 +199,33 @@ export default class Homescreen extends Component {
                     </div>
                 </div>
 
-                <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Web Development</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal1" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Web Development</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> .Net MVC</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C#</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Java</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> VB</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> PHP</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Node.JS</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> HTML5 </li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> CSS</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Bootstrap</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Python</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> JQuery</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> AngularJS</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> WordPress</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Joomla</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> .Net MVC</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> C#</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Java</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> VB</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> PHP</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Node.JS</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> HTML5 </li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> CSS</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Bootstrap</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Python</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> JQuery</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> AngularJS</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> WordPress</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Joomla</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -233,15 +233,15 @@ export default class Homescreen extends Component {
                                             A business or enterprise website presents your business scope in detail to the viewers and promotes your objectives in each click. We have a passion to create and build websites as per your business objectives and transform your business needs in to a form a website. You will be explored to get the best and web friendly development services sinking with the latest trends of the market with our different range of solutions.
                                         </div>
                                         <div>
-                                            <img src="../../assets/webdev.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/webdev.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -250,28 +250,28 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Mobile Development</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal2" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Mobile Development</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Ios</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Android</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Swift</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Objective-C</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> PhoneGap</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Apache Cordova</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Xamarin</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Titanium</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Ios</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Android</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Swift</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Objective-C</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> PhoneGap</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Apache Cordova</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Xamarin</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Titanium</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -282,15 +282,15 @@ export default class Homescreen extends Component {
                                             Innovative mobile business strategies. Beautiful user experience designs. Powerful agile app development.
                                         </div>
                                         <div>
-                                            <img src="../../assets/mobiledev.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/mobiledev.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block btn-pricing price-request smooth-scroll" onclick="closePricing();">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block btn-pricing price-request smooth-scroll">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block btn-pricing quote-request" onclick="closePricing();"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block btn-pricing quote-request"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -299,33 +299,33 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Software Architecting & Engineering</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal3" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Software Architecting & Engineering</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Development Life-Cycle Management (SDLC)</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Analysis</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Architecture & Design</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Software Integration</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Hardware Integration</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Embedded Systems</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C, C++ </li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> ASM</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> C#</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Java</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Linux</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> OSx</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> iOS</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Software Development Life-Cycle Management (SDLC)</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Software Analysis</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Architecture & Design</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Software Integration</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Hardware Integration</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Embedded Systems</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> C, C++ </li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> ASM</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> C#</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Java</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Windows</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Linux</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> OSx</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> iOS</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -333,15 +333,15 @@ export default class Homescreen extends Component {
                                             Most companies have experienced the frustration of two or more software programs unable to share critical information. Lack of software interoperability is one of the biggest problems in business today. YooFoo has extensive experience in developing Enterprise Resource Planning (ERP) systems: systems that enable multiple, independent, software applications to communicate with each other throughout the organization. All of our software interfaces are created to meet or exceed industry standards.
                                         </div>
                                         <div>
-                                            <img src="../../assets/softwaredev.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/softwaredev.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -350,25 +350,25 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Data Services</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal4" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Data Services</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Infomatics</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data research</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data Analysis</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Reporting and Visualization</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data Migration</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Data integration</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Infomatics</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Data research</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Data Analysis</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Reporting and Visualization</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Data Migration</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Data integration</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -376,15 +376,15 @@ export default class Homescreen extends Component {
                                             Most companies have experienced the frustration of trying to merge data from more than one system, or data source, with disappointing results. These ‘silos’ of information create inefficiencies within an organization that result in cumbersome work-around and hours of wasted time. In fact lack of software interoperability is one of the biggest problems reported by businesses and government organizations, large and small, throughout the world today.
                                         </div>
                                         <div>
-                                            <img src="../../assets/data_management.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/data_management.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -393,22 +393,22 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Design & Creatives</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal5" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Design & Creatives</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Web design</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Graphics design</li>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> UI design</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Web design</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Graphics design</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> UI design</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -416,15 +416,15 @@ export default class Homescreen extends Component {
                                             For those who have been hiding under the hood and never took a dive into the capacity of a web page; the essence of web designing goes beyond just embedding attractive layouts with the development code.
                                         </div>
                                         <div>
-                                            <img src="../../assets/design2.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/design2.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -433,20 +433,20 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Testing & Quality Analysis</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal6" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Testing & Quality Analysis</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><i class="fa fa-check okicon" aria-hidden="true"></i> Selenium</li>
+                                            <li><i className="fa fa-check okicon" aria-hidden="true"></i> Selenium</li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-8 blueboxR">
@@ -454,15 +454,15 @@ export default class Homescreen extends Component {
                                             Software and IT organizations wanting to ensure high quality releases need to incorporate an effective quality assurance and testing program in their operations.
                                         </div>
                                         <div>
-                                            <img src="../../assets/testing1.jpg" class="col-sm-6" alt="Mobile Development"></img>
+                                            <img src="../../assets/testing1.jpg" className="col-sm-6" alt="Mobile Development"></img>
                                         </div>
                                         <div className="row btntmng">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5">
-                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" class="btn btn-primary btn-block">Our Price</a>
+                                            <div className="col-md-1"></div>
+                                            <div className="col-md-5">
+                                                <a href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block">Our Price</a>
                                             </div>
-                                            <div class="col-md-5">
-                                                <a href="#" data-toggle="modal" data-target="#RequestForm" class="btn btn-primary btn-block"><span>Request Quote</span></a>
+                                            <div className="col-md-5">
+                                                <a href="#" data-toggle="modal" data-target="#RequestForm" className="btn btn-primary btn-block"><span>Request Quote</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -472,22 +472,22 @@ export default class Homescreen extends Component {
                     </div>
                 </div>
 
-                <div class="modal fade bd-example-modal-lg" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header modal_header1">
-                                <h5 class="modal-title" id="exampleModalLabel">Distributed Agile Augmentation</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal7" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Distributed Agile Augmentation</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">                                   
                                     <div className="col-sm-4 blueboxL popuplist">
                                         <ul>
-                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> On Shore </a></li>
-                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> Off Shore </a></li>
-                                            <li><a href={BASE_URL}><i class="fa fa-check okicon" aria-hidden="true"></i> On Premise </a></li>                                                                                      
+                                            <li><a href={BASE_URL}><i className="fa fa-check okicon" aria-hidden="true"></i> On Shore </a></li>
+                                            <li><a href={BASE_URL}><i className="fa fa-check okicon" aria-hidden="true"></i> Off Shore </a></li>
+                                            <li><a href={BASE_URL}><i className="fa fa-check okicon" aria-hidden="true"></i> On Premise </a></li>                                                                                      
                                         </ul>
                                     </div>                                    
                                     <div className="col-sm-8">
@@ -506,23 +506,21 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header modal_header1">
-                                <h5 class="modal-title" id="exampleModalLabel">Technology Project Consulting</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal8" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header modal_header1">
+                                <h5 className="modal-title" id="exampleModalLabel">Technology Project Consulting</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <p className="Distributed_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                                     </div>
                                     <div className="">
                                     <img src="../../assets/TechnologyProjectConsulting.jpg" className="img-fluid ousrser_img col-sm-8" alt="Distributed Agile Augmentation
@@ -534,23 +532,21 @@ export default class Homescreen extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="modal fade bd-example-modal-lg" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header modal_header1">
-                                <h5 class="modal-title" id="exampleModalLabel">Digital Transformation Strategies</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div className="modal fade bd-example-modal-lg" id="modal9" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header modal_header1">
+                                <h5 className="modal-title" id="exampleModalLabel">Digital Transformation Strategies</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <p className="Distributed_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                                     </div>
                                     <div className="">
                                     <img src="../../assets/ourdna.jpg" className="img-fluid ousrser_img col-sm-8" alt="Distributed Agile Augmentation
@@ -577,7 +573,7 @@ export default class Homescreen extends Component {
                                 <Collapse isOpen={this.state.isOpen} navbar>
                                     <Nav className="ml-auto" navbar>
                                         <UncontrolledDropdown nav inNavbar>
-                                            <DropdownToggle nav caret> SERVICES </DropdownToggle>
+                                            <DropdownToggle nav caret> Services </DropdownToggle>
                                             <DropdownMenu right>
                                                 <DropdownItem onClick={() => scrollToComponent(this.DistributedAgile, { offset: 0, align: 'top', duration: 500 })}> Distributed Agile Augmentation </DropdownItem>
                                                 <DropdownItem onClick={() => scrollToComponent(this.Technologyproject, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> Technology Project Consulting </DropdownItem>
@@ -585,14 +581,14 @@ export default class Homescreen extends Component {
                                             </DropdownMenu>
                                         </UncontrolledDropdown>
                                         <NavItem>
-                                            <NavLink onClick={() => scrollToComponent(this.Practiceareas, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}>PRACTICE AREAS</NavLink>
+                                            <NavLink onClick={() => scrollToComponent(this.Practiceareas, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> Practice Areas</NavLink>
                                         </NavItem>
                                         <UncontrolledDropdown nav inNavbar>
-                                            <DropdownToggle nav caret> INDUSTRIES </DropdownToggle>
+                                            <DropdownToggle nav caret> Industries </DropdownToggle>
                                             <DropdownMenu right>
-                                                <DropdownItem href="/#/Bfsi/"> BFSI </DropdownItem>
-                                                <DropdownItem onClick={() => scrollToComponent(this.LifeSciences, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> LIFE SCIENCES </DropdownItem>
-                                                <DropdownItem href="/#/HighTech/"> HIGH TECH </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.Bfsi, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> BFSI </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.LifeSciences, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> Life Sciences </DropdownItem>
+                                                <DropdownItem onClick={() => scrollToComponent(this.Hightech, { offset: 0, align: 'top', duration: 500, ease: 'inExpo' })}> High Tech </DropdownItem>
                                             </DropdownMenu>
                                         </UncontrolledDropdown>
                                         {/* <NavItem>
@@ -602,13 +598,13 @@ export default class Homescreen extends Component {
                                             <NavLink href="/#/articles-events/">ARTICLES & EVENTS</NavLink>
                                         </NavItem> */}
                                         <NavItem>
-                                            <NavLink onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 500 })}>ABOUT</NavLink>
+                                            <NavLink onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 500 })}>About</NavLink>
                                         </NavItem>
                                         {/* <NavItem>
                                             <NavLink href="/#/blog/">BLOG</NavLink>
                                         </NavItem> */}
                                         <NavItem>
-                                            <NavLink href="/#/contact-us/" className="menuactive">CONTACT US</NavLink>
+                                            <NavLink href="/#/contact-us/" className="menuactive">Contact Us</NavLink>
                                         </NavItem>
                                     </Nav>
                                 </Collapse>
@@ -620,13 +616,13 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12 paddinglr">
                         <div className="row">
                             <div className="col-md-12 col-sm-12">
-                                <Slider autoplay={2000} className="slider-wrapper">
+                                <Slider autoPlay={2000} className="slider-wrapper">
                                     {content.map((item, index) => (
                                         <div
                                             key={index}
                                             className="slider-content"
                                             style={{ background: `url('${item.image}') no-repeat center center` }}
-                                            autoplay={5}
+                                            autoPlay={5}
                                         >
                                             <div className="inner">
                                                 <h1>{item.title}</h1>
@@ -648,8 +644,8 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose' data-tip='1'>
                                             <Fade left>
                                                 <div className="roundedbox1">
-                                                    <div className="clientNo">43</div>
-                                                    <div className="clientNo1">Active <br></br> Clients</div>
+                                                    {/* <div className="clientNo">43</div> */}
+                                                    <div className="clientNo1">Active Clients include Small to Fortune 500</div>
                                                 </div>
                                             </Fade>
                                         </a>
@@ -665,14 +661,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose1' data-tip='1'>
                                             <Fade top>
                                                 <div className="roundedbox1">
-                                                    <div className="clientNo4">2000+</div>
-                                                    <div className="clientNo5">Delivered <br></br> Projects</div>
+                                                    {/* <div className="clientNo4">2000+</div> */}
+                                                    <div className="clientNo5">Countless Delivered Projects</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose1' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Delivered Projects </h3>
+                                                <h3>Countless Delivered Projects </h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -682,14 +678,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose2' data-tip='1'>
                                             <Fade bottom>
                                                 <div className="roundedbox">
-                                                    <div className="clientNo2">2000+</div>
-                                                    <div className="clientNo3">Staff <br></br> Attrition</div>
+                                                    {/* <div className="clientNo2">2000+</div> */}
+                                                    <div className="clientNo3">Offshore Onshore / Nearshore On-Premise</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose2' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Staff Attrition</h3>
+                                                <h3>Offshore Onshore</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -701,14 +697,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose3' data-tip='1'>
                                             <Fade top>
                                                 <div className="roundedbox">
-                                                    <div className="clientNo2">6+</div>
-                                                    <div className="clientNo3">Timezones <br></br> Covered</div>
+                                                    {/* <div className="clientNo2">6+</div> */}
+                                                    <div className="clientNo3">Covering Multiple Timezones</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose3' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Timezones Covered</h3>
+                                                <h3>Covering Multiple Timezones</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -717,14 +713,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose4' data-tip='1'>
                                             <Fade left>
                                                 <div className="roundedbox3">
-                                                    <div className="clientNo6">98%</div>
-                                                    <div className="clientNo7">Client <br></br> Retention</div>
+                                                    {/* <div className="clientNo6">98%</div> */}
+                                                    <div className="clientNo7">Expertise in Various Industries</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose4' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Client Retention</h3>
+                                                <h3>Expertise in Various Industries</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -733,14 +729,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose5' data-tip='1'>
                                             <Fade bottom>
                                                 <div className="roundedbox2">
-                                                    <div className="clientNo2">100+</div>
-                                                    <div className="clientNo3">Distributed  <br></br> Teams</div>
+                                                    {/* <div className="clientNo2">100+</div> */}
+                                                    <div className="clientNo3">Agile Management Style</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose5' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Distributed Teams</h3>
+                                                <h3>Agile Management Style</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -753,14 +749,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose6' data-tip='1'>
                                             <Fade right>
                                                 <div className="roundedbox2">
-                                                    <div className="clientNo2">600+</div>
-                                                    <div className="clientNo3">Full Time  <br></br> Engineering Staff</div>
+                                                    {/* <div className="clientNo2">600+</div> */}
+                                                    <div className="clientNo3">Experienced and High Performing Engineering Team</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose6' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Full Time Engineering Staff</h3>
+                                                <h3>Experienced Engineering Team</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -769,14 +765,14 @@ export default class Homescreen extends Component {
                                         <a href={BASE_URL} className="" data-for='soclose7' data-tip='1'>
                                             <Fade bottom>
                                                 <div className="roundedbox circle">
-                                                    <div className="clientNo2">3</div>
-                                                    <div className="clientNo3">Countries of <br></br> Operation</div>
+                                                    {/* <div className="clientNo2">3</div> */}
+                                                    <div className="clientNo3">Multiple Countries of Operation</div>
                                                 </div>
                                             </Fade>
                                         </a>
                                         <ReactTooltip id='soclose7' getContent={(dataTip) =>
                                             <div className="col-md-12">
-                                                <h3>Countries of Operation</h3>
+                                                <h3>Multiple Countries of Operation</h3>
                                                 <div className="activeclients_p">YooFoo is an international information technology company that
                                              specializes in creating and maintaining innovative information technology, </div>
                                             </div>}
@@ -838,13 +834,21 @@ export default class Homescreen extends Component {
                                 </div>
                                 <div className="clear"></div>
                                 <div className="col-sm-12 col-md-8 industry_p50">
-                                    <div className="trustedbyind_hdr">Industry Expertise</div>
-                                    <Slider autoplay={5000} className="slider-wrapper11">
+                                    {/* <div className="trustedbyind_hdr">Industry Expertise</div> */}
+                        <div> 
+                            <div>
+                                 <div className="lefthdrbluline2"></div>                           
+                            </div>
+                            <div className="headingAbout_In">Industry <span className="headingAbout1_In">Expertise</span></div>
+                        </div> 
+
+
+                                    <Slider autoPlay={5000} className="slider-wrapper11">
                                         {Industry_Expertise.map((item, index) => (
                                             <div
                                                 key={index}
                                                 className="slider-content1"
-                                                autoplay={5}
+                                                autoPlay={5}
                                             >
                                                 <h1 className="Industry_subh1">{item.Industry_title}</h1>
                                                 <h1 className="Industry_subh2">{item.Industry_title1}</h1>
@@ -962,7 +966,7 @@ export default class Homescreen extends Component {
                     <div className="col-md-12 col-sm-12 pay_pdng">
                         <div className="row paytopp">
                             <div className="col-sm-6">
-                                 <div className=""> 
+                           <div> 
                             <div>
                             <div className="lefthdrbluline1"></div>                           
                             </div>
@@ -970,17 +974,7 @@ export default class Homescreen extends Component {
                             <p className="para1">As your company grows, Yoofoo has the technical capabilities to provide you with top of the line services. 
                             As a long term partner with us, we have the additional savings described below. <br></br>asking questions before providing answers.</p>
                             </div>
-                            </div> 
-                                {/* <div className="row">
-                                    <div className="col-sm-1 blueline"></div>
-                                    <div className="col-sm-11 paddingleft0">
-                                        <p className="hdrm">PAY AS YOU <span className="hdrm1">GROW</span></p>
-                                        <p className="paypara">
-                                            As your company grows, Yoofoo has the technical capabilities to provide you with top of the line services.
-                                            As a long term partner with us, we have the additional savings described below.
-                                    </p>
-                                    </div>
-                                </div> */}
+                            </div>                                
                                 <div className="row hpatop">
                                     <div className="col-sm-12 monthlyhdr">Monthly Service Packages</div>
                                     <div className="col-sm-4 monthlydis">Discount as much as</div>
@@ -1042,13 +1036,17 @@ export default class Homescreen extends Component {
                             </Fade>
                             <div className="row">
                                 <div className="col-md-4 col-sm-12">
-                                    <div className="row">
-                                        <div className="cardpdng"  ref={(section) => { this.DistributedAgile = section; }}>
-                                            <LightSpeed left>
-                                                <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal7">
-                                            <img className="image" src="../../assets/ourservice.jpg" alt="ourservice"></img></a>
-                                            </LightSpeed>
-                                        </div>
+                                    <div className="row">                                       
+                                        <div className="containerimg cardpdng" ref={(section) => { this.DistributedAgile = section; }}>
+                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal7">   
+                                        <LightSpeed left>
+                                            <img src="../../assets/ourservice.jpg" alt="Distributed Agile Augmentation" className="image"></img>
+                                        </LightSpeed>  
+                                            {/* <div className="middle">
+                                                <div className="text">Click</div>
+                                            </div> */}
+                                        </a>
+                                    </div>  
                                         <div className="cardpdng">
                                             <Fade left>
                                                 <div className="row">
@@ -1068,7 +1066,6 @@ export default class Homescreen extends Component {
                                                 </div>
                                             </Fade>
                                         </div>
-
                                         <div className="cardpdng">
                                             <Fade bottom>
                                                 <div className="row">
@@ -1088,12 +1085,18 @@ export default class Homescreen extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4 col-sm-12">
-                                    <div className="cardpdng" ref={(section) => { this.Technologyproject = section; }}>
-                                        <Flip>
-                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal8">
-                                            <img className="image" src="../../assets/ourservice1.jpg" alt="ourservice"></img></a>                                           
-                                        </Flip>
+                                <div className="col-md-4 col-sm-12">                                   
+                                    <div className="row">
+                                    <div className="containerimg cardpdng" ref={(section) => { this.Technologyproject = section; }}>                                        
+                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal8">   
+                                         <Flip>                                      
+                                            <img src="../../assets/ourservice1.jpg" alt="Technology Project Consulting" className="image"></img>
+                                         </Flip>  
+                                            {/* <div className="middle">
+                                                <div className="text">Click</div>
+                                            </div> */}
+                                        </a>                                    
+                                    </div>  
                                     </div>
                                     <div className="cardpdng">
                                         <Fade top>
@@ -1129,12 +1132,18 @@ export default class Homescreen extends Component {
                                         </Fade>
                                     </div>
                                 </div>
-                                <div className="col-md-4 col-sm-12">
-                                    <div className="cardpdng technology" ref={(section) => { this.DigitalTrans = section; }}>
-                                        <LightSpeed right>
-                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal9">
-                                            <img className="image" src="../../assets/ourservice2.jpg" alt="DigitalTransformation Strategies"></img></a>                   
-                                        </LightSpeed>
+                                <div className="col-md-4 col-sm-12">                                   
+                                    <div className="row">
+                                    <div className="containerimg cardpdng" ref={(section) => { this.DigitalTrans = section; }}>                                    
+                                        <a href={BASE_URL} data-toggle="modal" data-target=".bd-example-modal-lg" data-target="#modal9">   
+                                            <LightSpeed right>                                     
+                                            <img src="../../assets/ourservice2.jpg" alt="DigitalTransformation Strategies" className="image"></img>
+                                            </LightSpeed>  
+                                            {/* <div className="middle">
+                                                <div className="text">Click</div>
+                                            </div> */}
+                                        </a>                                    
+                                    </div>  
                                     </div>
                                     <div className="cardpdng">
                                         <Fade right>
@@ -1193,19 +1202,37 @@ export default class Homescreen extends Component {
                             <div className="col-md-5">
                             <img className="img-thumbnail rounded" src="../../assets/practiceareas.jpg" alt="Practice Areas"></img>
                             </div>
-                            </div>    
-                       
+                            </div>                        
+                      </div>
+                        </div>
                     </div>
+                    <div className="col-md-12 col-sm-12 paddingtop">
+                        <div className="container-fluid">
+                        <div className="row innerContent" ref={(section) => { this.Bfsi = section; }}>                        
+                            <div className="row">   
+                            <div className="col-md-5">
+                            <img className="img-thumbnail rounded" src="../../assets/Bfsi.jpg" alt="Practice Areas"></img>
+                            </div>                  
+                            <div className="col-md-7">
+                            <div>
+                            <div className="lefthdrbluline"></div>                           
+                            </div>
+                            <div className="headingAbout">BF<span className="headingAbout1">SI</span>
+                            <p className="para1">Banks, Financial services and insurance <br></br> Success Through a Proven Model</p>
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            </div>                       
+                        </div>
                         </div>
                     </div>
 
                     <div className="col-md-12 col-sm-12 paddingtop">
                         <div className="container-fluid">
                         <div className="row innerContent" ref={(section) => { this.LifeSciences = section; }}>                        
-                            <div className="row">   
-                            <div className="col-md-5">
-                            <img className="img-thumbnail rounded" src="../../assets/LifeSciences.jpg" alt="Practice Areas"></img>
-                            </div>                  
+                            <div className="row">                                        
                             <div className="col-md-7">
                             <div>
                             <div className="lefthdrbluline"></div>                           
@@ -1217,10 +1244,11 @@ export default class Homescreen extends Component {
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
-                           
-                            </div>    
-                       
-                    </div>
+                            <div className="col-md-5">
+                            <img className="img-thumbnail rounded" src="../../assets/LifeSciences.jpg" alt="Practice Areas"></img>
+                            </div>      
+                            </div>                       
+                        </div>
                         </div>
                     </div>
 
@@ -1239,13 +1267,13 @@ export default class Homescreen extends Component {
                                                 </div>
                                                 <div className="row testimonialspanel">
                                                     <div className="col-md-12">
-                                                        <Slider autoplay={5000} className="slider-wrapper2">
+                                                        <Slider autoPlay={5000} className="slider-wrapper2">
                                                             {content_Testimonials.map((item, index) => (
                                                                 <div
                                                                     key={index}
                                                                     className="slider-content2"
                                                                     //  style={{ background: `url('${item.image1}') no-repeat center center` }}
-                                                                    autoplay={5}
+                                                                    autoPlay={5}
                                                                 >
                                                                     <div className="inner2">
                                                                         <p className="profileimg"> <img className="rounded-circle rounded img-thumbnail" alt="profile" src={item.image1} /></p>
@@ -1307,12 +1335,12 @@ export default class Homescreen extends Component {
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div className="trustedbyind_hdr1">News</div>
-                                            <Slider autoplay={5000} className="slider-wrapper1">
+                                            <Slider autoPlay={5000} className="slider-wrapper1">
                                                 {content_news.map((item, index) => (
                                                     <div
                                                         key={index}
                                                         className="slider-content1"
-                                                        autoplay={5}
+                                                        autoPlay={5}
                                                     >
                                                         <div className="inner1">
                                                             <h1>{item.title}</h1>

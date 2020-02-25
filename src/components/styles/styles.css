@@ -15,7 +15,7 @@ p{
     padding-top: 15px;
 }
 h3{
-    font-size: 23px;
+    font-size: 20px;
 }
 .paddinglr{
     padding-left: 0;
@@ -32,13 +32,16 @@ h3{
 }
 .navbar-light .navbar-nav .nav-link{
     font-family: 'ProximaNovaRegular';
-    font-size:14px;
+    font-size:16px;
     color: #0e70c7;
     border: none;    
-    padding-left: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: left;
     font-weight: 600;
     letter-spacing: 0.6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-right: 1.5rem;
@@ -109,10 +112,11 @@ h3{
     background-position:top;
     background: cover;
     width: 100%;
+    padding-top: 50px;
     /* min-height: 900px; */
 }
 .react-tabs{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .heading1, .heading_testiml{
     font-family:'ProximaNovaRegular';
@@ -127,7 +131,7 @@ h3{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.headingAbout{
+.headingAbout, .headingAbout_In{
     padding-left: 15px;
     font-size: 50px;
     color: #4c4c4c;
@@ -136,13 +140,21 @@ h3{
     font-family:'ProximaNovaRegular';
     text-transform: uppercase;
 }
-.headingAbout1{
+.headingAbout1, .headingAbout1_In{
     color: #ff8873;
     font-size: 50px;
     text-align: left;
     font-weight: bold;
     font-family:'ProximaNovaRegular';
     text-transform: uppercase;
+}
+.headingAbout_In{
+    font-size: 30px;
+    padding-top: 8px;
+}
+.headingAbout1_In{
+    font-size: 30px;
+    padding-top: 8px;
 }
 .heading2{
     color: #5db4de;
@@ -320,10 +332,10 @@ cursor: pointer;
 .clientNo1, .clientNo3, .clientNo4, .clientNo5, .clientNo6, .clientNo7{
     font-family: 'ProximaNovaRegular';
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
-    padding-top: 45px;
-    padding-left: 15px;
+    padding-top: 40px;
+    padding-left: 10px;
 }
 .clientNo2{
     color: #fff;
@@ -334,7 +346,7 @@ cursor: pointer;
     color: #fff;
     text-align: left;
     font-family: 'ProximaNovaRegular';
-    font-size: 14px;
+    font-size: 16px;
 }
 .clientNo4{
     color: #4ca8d4;
@@ -475,14 +487,54 @@ cursor: pointer;
     padding-left: 50px;
     padding-top: 50px;
 }
-.image {    
+/* .image {    
     transition: .5s ease;
     backface-visibility: hidden;    
   }
   .cardpdng:hover .image {
     opacity: 0.5;
   }
+   */
+   .containerimg {
+    position: relative;  
+  }
   
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .containerimg:hover .image {
+    opacity: 0.4;
+  }
+  
+  .containerimg:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #1b62a1;
+    color: white;
+    font-size: 16px;
+    padding: 5px 32px;
+    border-radius: 6px;
+  }
+
 .icon1{
     font-size: 35px;
     color: #1b62a1;
@@ -1350,29 +1402,47 @@ button:hover {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 18rem;
-    padding: .5rem 0;
+    min-width: 15rem;
+    padding: 0rem 0;
     margin: .125rem 0 0;
     font-family: 'ProximaNovaRegular';
     color: #1b62a1;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #eaf5fb;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: .25rem;
+    border: 1px solid #e2eef5;
+    border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .dropdown-item {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+    padding: .25rem 0.5rem;
     clear: both;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'ProximaNovaRegular';
     color: #1b62a1;
     background-color: transparent;
     border: 0;
+    letter-spacing: 0.5px !important;
+    text-transform: capitalize;
+    border-radius: 0em !important;
+    border-bottom: solid 1px #76a9d6;
 }
+.dropdown-item:hover{
+    color: #fff !important;
+    background-color: #1b62a1 !important;
+    border-radius: 0em !important;
+}
+.dropdown-item:focus{
+    color: #fff !important;
+    background-color: #1b62a1 !important;
+    border-radius: 0em !important;
+}
+
 /*-------------Contact Us---------------------*/
 
 .contactus{
@@ -1826,7 +1896,7 @@ button:hover {
     background-color: #3da5d6 !important;
     color: #fff !important;
 }
-.lefthdrbluline, .lefthdrbluline1{
+.lefthdrbluline, .lefthdrbluline1, .lefthdrbluline2{
     width: 7px;
     height: 125px;
     float: left;
@@ -1835,6 +1905,9 @@ button:hover {
 }
 .lefthdrbluline1{
     height: 190px;
+}
+.lefthdrbluline2{
+    height: 40px;
 }
 .para1{
     font-size: 16px;
@@ -2180,19 +2253,25 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 
   .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
       color: #fff !important;
-      background-color: #ffd800 !important;
+      background-color: #1b62a1 !important;     
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
   }
   /* .navbar-light a .navbar-nav a .nav-link a{
       background-color: #ffd800 !important;
       color: #fff !important;
   } */
-  /* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    background-color: #ffd800 !important;
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    background-color: #1b62a1 !important;
     color: #fff !important;
-  } */
+    border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+  }
   .navbar-light .navbar-nav .nav-link:focus{
-    background-color: #ffd800 !important;
+    background-color: #1b62a1 !important;
     color: #fff !important;
+    border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
   }
 
   .pricing-title {
