@@ -562,6 +562,8 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 }
 .readmore{
     font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
     font-weight: normal !important;
 }
 .readmore a{
@@ -1945,7 +1947,7 @@ button:hover {
     color: #000000 !important;
     text-align: left;
     padding-top: 0;
-    padding-right: 150px;
+    padding-right: 100px;
     text-transform: capitalize;
     font-weight: normal;
 }
@@ -2025,7 +2027,16 @@ button:hover {
   }
   
   @media (max-width: 640px) {
-      
+    .address_hdr{
+        margin-top: 20px;
+    }
+    .contactfrom{
+        background-color: #fff;
+        padding: 20px 0px 30px 0px;
+        margin-top: 0px;   
+        margin-bottom: 50px;
+        opacity: 1;
+    }
 .ind_line{
     height: 220px;  
     margin-top: 40px;  

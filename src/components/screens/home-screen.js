@@ -37,25 +37,25 @@ const content = [
   {
     title: "Digital Transformation Solutions",
     description: "Through Distributed Agile Team",
-    image: "../assets/banner1.jpg",
+    image: "../assets/banner1.jpg"
     // button: "Read More"
   },
   {
     title: "Software, and Data Solutions",
     description: "A Respected World Leader in the Provision of Technology",
-    image: "../assets/about.jpg",
+    image: "../assets/about.jpg"
     // button: "About Us"
   },
   {
     title: "Our Software Development Services Transform",
     description: "Development",
-    image: "../assets/banner2.jpg",
+    image: "../assets/banner2.jpg"
     // button: "Read More"
   },
   {
     title: "Success Through a Proven Model",
     description: "Sucess",
-    image: "../assets/contactus.jpg",
+    image: "../assets/contactus.jpg"
     // button: "Contact Us"
   }
 ];
@@ -179,7 +179,7 @@ export default class Homescreen extends Component {
     const BASE_URL = "#";
     return (
       <div>
-        <div
+        {/* <div
           className="modal fade bd-example-modal-lg"
           id="RequestForm"
           tabIndex="-1"
@@ -260,7 +260,7 @@ export default class Homescreen extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="modal fade bd-example-modal-lg"
@@ -592,7 +592,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -600,9 +608,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -732,7 +750,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btn-pricing price-request smooth-scroll"
+                          className="btn btn-primary btn-block btn-pricing price-request smooth-scroll" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -740,9 +766,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block btn-pricing quote-request"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block btn-pricing quote-request" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -911,7 +947,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -919,9 +963,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -1032,7 +1086,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -1040,9 +1102,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -1127,7 +1199,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -1135,9 +1215,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -1207,7 +1297,15 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.OurPrice, {
+                              offset: 0,
+                              align: "top",
+                              duration: 500,
+                              ease: "inCirc"
+                            })
+                          }
                         >
                           Our Price
                         </a>
@@ -1215,9 +1313,19 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <a
                           href="#"
-                          data-toggle="modal"
-                          data-target="#RequestForm"
-                          className="btn btn-primary btn-block"
+                          type="button"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                          aria-label="Close"
+                          className="btn btn-primary btn-block" 
+                          onClick={() =>
+                            scrollToComponent(this.ContactUs, {
+                              offset: -10,
+                              align: "top",
+                              duration: 500,
+                              ease: "inExpo"
+                            })
+                          }
                         >
                           <span>Request Quote</span>
                         </a>
@@ -1427,7 +1535,6 @@ export default class Homescreen extends Component {
                     <Nav className="ml-auto" navbar>
                       <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
-                          
                           Services
                         </DropdownToggle>
                         <DropdownMenu right>
@@ -1440,7 +1547,6 @@ export default class Homescreen extends Component {
                               })
                             }
                           >
-                            
                             Distributed Agile Augmentation
                           </DropdownItem>
                           <DropdownItem
@@ -1453,7 +1559,6 @@ export default class Homescreen extends Component {
                               })
                             }
                           >
-                            
                             Technology Project Consulting
                           </DropdownItem>
                           <DropdownItem
@@ -1466,7 +1571,6 @@ export default class Homescreen extends Component {
                               })
                             }
                           >
-                            
                             Digital Transformation Strategies
                           </DropdownItem>
                         </DropdownMenu>
@@ -1485,7 +1589,6 @@ export default class Homescreen extends Component {
                             })
                           }
                         >
-                          
                           Industries
                         </NavLink>
                       </NavItem>
@@ -1851,7 +1954,6 @@ export default class Homescreen extends Component {
                           {item.Industry_title1}
                         </h1>
                         <p className="Industry_logo">
-                          
                           <img alt="profile" src={item.Industry_logo} />
                         </p>
                         {/* <div className="inner1">
@@ -1997,7 +2099,9 @@ export default class Homescreen extends Component {
           </div>
 
           <div className="col-md-12 col-sm-12 pay_pdng">
-            <div className="row paytopp">
+            <div className="row paytopp" ref={section => {
+                        this.OurPrice = section;
+                      }}>
               <Fade left>
                 <div className="col-sm-6">
                   <div>
@@ -2173,7 +2277,7 @@ export default class Homescreen extends Component {
                                   data-target=".bd-example-modal-lg"
                                   data-target="#modal1"
                                 >
-                                  Read More
+                                  Read More 
                                   <i
                                     className="fa fa-angle-double-right readmore"
                                     aria-hidden="true"
@@ -2519,7 +2623,6 @@ export default class Homescreen extends Component {
                                 >
                                   <div className="inner2">
                                     <p className="profileimg">
-                                      
                                       <img
                                         className="rounded-circle rounded img-thumbnail"
                                         alt="profile"
@@ -2554,7 +2657,6 @@ export default class Homescreen extends Component {
                       <div className="col-md-5">
                         <div className="row">
                           <div className="col-md-12">
-                            
                             <div className="heading1 hdr1_pdng">
                               Trusted By Industry Leaders
                             </div>
@@ -2571,28 +2673,24 @@ export default class Homescreen extends Component {
                                   scrolldelay="100"
                                 >
                                   <div className="chalkcoutureicon">
-                                    
                                     <img
                                       src="../../assets/clients/chalkcouture.png"
                                       alt="chalkcouture"
                                     ></img>
                                   </div>
                                   <div className="chalkcoutureicon">
-                                    
                                     <img
                                       src="../../assets/clients/unicity.png"
                                       alt="unicity"
                                     ></img>
                                   </div>
                                   <div className="chalkcoutureicon">
-                                    
                                     <img
                                       src="../../assets/clients/q-sciences.png"
                                       alt="q-sciences"
                                     ></img>
                                   </div>
                                   <div className="chalkcoutureicon">
-                                    
                                     <img
                                       src="../../assets/clients/wink.png"
                                       alt="wink"
@@ -2641,8 +2739,8 @@ export default class Homescreen extends Component {
                             <div className="row addrlp">
                               <div className="col-sm-7">
                                 <div className="address_hdr">
-                                  <i className="fas fa-map-marker-alt"></i>&nbsp;
-                                  Address
+                                  <i className="fas fa-map-marker-alt"></i>
+                                  &nbsp; Address
                                 </div>
                                 <div>
                                   <div className="address_hdr1">
@@ -2679,8 +2777,8 @@ export default class Homescreen extends Component {
                                 <div className="row">
                                   <div className="col-sm-12">
                                     <div className="address_hdr">
-                                      <i className="fas fa-envelope-open"></i>&nbsp;
-                                      Email
+                                      <i className="fas fa-envelope-open"></i>
+                                      &nbsp; Email
                                     </div>
                                     <div className="address_hdr1 mailid">
                                       <a href={BASE_URL}>info@yoofoo.com</a>
@@ -2688,13 +2786,12 @@ export default class Homescreen extends Component {
                                   </div>
                                   <div className="col-sm-12 adrtop30">
                                     <div className="address_hdr adrbtm15">
-                                      <i className="fas fa-phone-volume"></i>&nbsp;
-                                      Phone
+                                      <i className="fas fa-phone-volume"></i>
+                                      &nbsp; Phone
                                     </div>
                                     <div className="address_p adrbtm15">
                                       <div>
                                         <div>
-                                          
                                           <img
                                             className="flagdiv"
                                             src="../../assets/usa.png"
@@ -2706,7 +2803,6 @@ export default class Homescreen extends Component {
                                     </div>
                                     <div className="address_p">
                                       <div>
-                                        
                                         <img
                                           className="flagdiv"
                                           src="../../assets/india.png"
