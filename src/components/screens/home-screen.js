@@ -2641,7 +2641,7 @@ export default class Homescreen extends Component {
                             <div className="row addrlp">
                               <div className="col-sm-7">
                                 <div className="address_hdr">
-                                  <i className="fas fa-map-marker-alt"></i>
+                                  <i className="fas fa-map-marker-alt"></i>&nbsp;
                                   Address
                                 </div>
                                 <div>
@@ -2679,7 +2679,7 @@ export default class Homescreen extends Component {
                                 <div className="row">
                                   <div className="col-sm-12">
                                     <div className="address_hdr">
-                                      <i className="fas fa-envelope-open"></i>
+                                      <i className="fas fa-envelope-open"></i>&nbsp;
                                       Email
                                     </div>
                                     <div className="address_hdr1 mailid">
@@ -2688,7 +2688,7 @@ export default class Homescreen extends Component {
                                   </div>
                                   <div className="col-sm-12 adrtop30">
                                     <div className="address_hdr adrbtm15">
-                                      <i className="fas fa-phone-volume"></i>
+                                      <i className="fas fa-phone-volume"></i>&nbsp;
                                       Phone
                                     </div>
                                     <div className="address_p adrbtm15">
