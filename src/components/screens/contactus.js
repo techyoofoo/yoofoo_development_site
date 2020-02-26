@@ -78,7 +78,6 @@ export default class ContactUsscreen extends Component {
                                 <div className="address_hdr">Phone</div>
                                 <div className="address_p"><div><div> <img className="flagdiv" src="../../assets/usa.png" alt="ourservice2"></img></div></div> +1-800-741-8264</div>
                                 <div className="address_p"><div> <img className="flagdiv" src="../../assets/india.png" alt="ourservice2"></img></div> 040-71055788</div>
-
                             </div>
                         </div>
                     </div>

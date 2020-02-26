@@ -22,10 +22,10 @@ export default class Footerscreen extends Component {
                         <Slide bottom>
                             <div className="subhdr_wt">Software Developers (USA, INDIA)</div>
                             <div className="subhdr_wt">Administrative Assistant (USA)</div>
-                        </Slide>
-                        <Bounce>
+                        </Slide>&nbsp;&nbsp;
+                        {/* <Bounce>
                             <div className="applyNow"><a href={BASE_URL}> APPLY NOW</a></div>
-                        </Bounce>
+                        </Bounce> */}
                         <div className="footer_br"></div>
                         <div className="footer_br1"></div>
 
@@ -34,7 +34,7 @@ export default class Footerscreen extends Component {
                                 maintaining innovative information technology solutions.</div>
                         </Fade>
                     </div>
-                    <div className="col-md-12">
+                    {/* <div className="col-md-12">
                         <Fade top>
                             <div className="row">
                                 <div className="col-md-3"></div>
@@ -65,7 +65,7 @@ export default class Footerscreen extends Component {
                                 </div>
                             </div>
                         </Fade>
-                    </div>
+                    </div> */}
                     <div className="footer_br"></div>
                     <div className="footer_br1"></div>
                     <div className="col-md-12">
