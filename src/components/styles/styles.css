@@ -1843,14 +1843,14 @@ button:hover {
     margin: 1px !important;
 }
 .monthlyhdr{
-    color: #66b3d8;
+    color: #3da5d6;
     font-size: 28px;
     font-weight: 600;
     text-align: left;
     padding-left: 0;
 }
 .monthlydis{
-    background-color: #66b3d8;
+    background-color: #3da5d6;
     color: #fff;
     padding: 3px 6px 3px 6px;
     font-size: 20px;
@@ -2124,6 +2124,11 @@ button:hover {
     .hdr1_pdng{
         padding-left: 10px;
         padding-top: 200px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+    .btntopm5{
+        margin-top: 5px;
     }
     .trustedbyindpanel{
         margin-top: 0px;

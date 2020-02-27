@@ -612,7 +612,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -770,7 +770,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btn-pricing quote-request" 
+                          className="btn btn-primary btn-block btn-pricing quote-request btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -967,7 +967,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1106,7 +1106,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1219,7 +1219,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1317,7 +1317,7 @@ export default class Homescreen extends Component {
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block btntopm5" 
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
