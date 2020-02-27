@@ -585,34 +585,20 @@ export default class Homescreen extends Component {
                     </div>
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
-                      <div className="col-md-5">
-                        <a
-                          href="#pricing"
-                          type="button"
-                          data-dismiss="modal"
-                          aria-hidden="true"
-                          aria-label="Close"
-                          className="btn btn-primary btn-block" 
-                          onClick={() =>
-                            scrollToComponent(this.OurPrice, {
-                              offset: 0,
-                              align: "top",
-                              duration: 500,
-                              ease: "inCirc"
-                            })
-                          }
-                        >
+                      <div className="col-md-5">                      
+                        <button href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block"
+                          onClick={() => scrollToComponent(this.OurPrice, { offset: 0, align: "top", duration: 500, ease: "inCirc" }) }>
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btntopm5" 
+                          className="btn btn-primary btn-block btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -623,7 +609,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -744,13 +730,13 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#pricing"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btn-pricing price-request smooth-scroll" 
+                          className="btn btn-primary btn-block btn-pricing price-request smooth-scroll"
                           onClick={() =>
                             scrollToComponent(this.OurPrice, {
                               offset: 0,
@@ -761,16 +747,16 @@ export default class Homescreen extends Component {
                           }
                         >
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btn-pricing quote-request btntopm5" 
+                          className="btn btn-primary btn-block btn-pricing quote-request btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -781,7 +767,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -941,13 +927,13 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#pricing"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block"
                           onClick={() =>
                             scrollToComponent(this.OurPrice, {
                               offset: 0,
@@ -958,16 +944,16 @@ export default class Homescreen extends Component {
                           }
                         >
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btntopm5" 
+                          className="btn btn-primary btn-block btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -978,7 +964,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1080,13 +1066,13 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#pricing"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block"
                           onClick={() =>
                             scrollToComponent(this.OurPrice, {
                               offset: 0,
@@ -1097,16 +1083,16 @@ export default class Homescreen extends Component {
                           }
                         >
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btntopm5" 
+                          className="btn btn-primary btn-block btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1117,7 +1103,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1193,13 +1179,13 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#pricing"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block"
                           onClick={() =>
                             scrollToComponent(this.OurPrice, {
                               offset: 0,
@@ -1210,16 +1196,16 @@ export default class Homescreen extends Component {
                           }
                         >
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btntopm5" 
+                          className="btn btn-primary btn-block btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1230,7 +1216,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1291,13 +1277,13 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#pricing"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block" 
+                          className="btn btn-primary btn-block"
                           onClick={() =>
                             scrollToComponent(this.OurPrice, {
                               offset: 0,
@@ -1308,16 +1294,16 @@ export default class Homescreen extends Component {
                           }
                         >
                           Our Price
-                        </a>
+                        </button>
                       </div>
                       <div className="col-md-5">
-                        <a
+                        <button
                           href="#"
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
                           aria-label="Close"
-                          className="btn btn-primary btn-block btntopm5" 
+                          className="btn btn-primary btn-block btntopm5"
                           onClick={() =>
                             scrollToComponent(this.ContactUs, {
                               offset: -10,
@@ -1328,7 +1314,7 @@ export default class Homescreen extends Component {
                           }
                         >
                           <span>Request Quote</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -2099,9 +2085,12 @@ export default class Homescreen extends Component {
           </div>
 
           <div className="col-md-12 col-sm-12 pay_pdng">
-            <div className="row paytopp" ref={section => {
-                        this.OurPrice = section;
-                      }}>
+            <div
+              className="row paytopp"
+              ref={section => {
+                this.OurPrice = section;
+              }}
+            >
               <Fade left>
                 <div className="col-sm-6">
                   <div>
@@ -2277,7 +2266,7 @@ export default class Homescreen extends Component {
                                   data-target=".bd-example-modal-lg"
                                   data-target="#modal1"
                                 >
-                                  Read More 
+                                  Read More
                                   <i
                                     className="fa fa-angle-double-right readmore"
                                     aria-hidden="true"
@@ -2641,9 +2630,9 @@ export default class Homescreen extends Component {
                                     <p className="testimonial_p">
                                       {item.description1}
                                     </p>
-                                    <button className="buttonReadm">
+                                    {/* <button className="buttonReadm">
                                       {item.button}
-                                    </button>
+                                    </button> */}
                                   </div>
                                 </div>
                               ))}
