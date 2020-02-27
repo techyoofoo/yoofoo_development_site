@@ -1965,7 +1965,9 @@ button:hover {
 .slider-wrapper11 > .nextButton{
     display: none;
 }
-
+.bg-light {
+    background-color: #fff!important;
+}
 
 /*--------------------*/
 
