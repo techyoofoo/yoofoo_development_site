@@ -1499,14 +1499,8 @@ export default class Homescreen extends Component {
           {/* <HeaderMenuscreen /> */}
           <div className="col-md-12 col-sm-12">
             <div className="row header">
-              <div className="col-md-3 col-sm-3">
-                <a href={BASE_URL}>
-                  <img
-                    className="img-fluid logopdng"
-                    src="../../assets/yoofoo_logo.png"
-                    alt="logo"
-                  ></img>
-                </a>
+              <div className="col-md-3 col-sm-3 logoalign">
+              <a href={BASE_URL}><img className="img-fluid logopdng" src="../../assets/yoofoo_logo.png" alt="Yoofoo logo"></img></a>
               </div>
 
               <div className="col-md-9 col-sm-12">
@@ -1623,6 +1617,7 @@ export default class Homescreen extends Component {
               </div>
             </div>
           </div>
+          <div className="clear"></div>
           <div className="col-md-12 col-sm-12 paddinglr">
             <div className="row">
               <div className="col-md-12 col-sm-12">
@@ -1929,7 +1924,7 @@ export default class Homescreen extends Component {
                       <span className="headingAbout1_In">Expertise</span>
                     </div>
                   </div>
-                  <Slider autoplay={4000} className="slider-wrapper11">
+                  <Slider autoplay={2000} className="slider-wrapper11">
                     {Industry_Expertise.map((item, index) => (
                       <div key={index} className="slider-content1" autoplay={3}>
                         <h1 className="Industry_subh1">
@@ -2270,7 +2265,7 @@ export default class Homescreen extends Component {
               </div>
               <div className="row">
                 <div className="col-md-4 col-sm-12">
-                  <div className="row">                    
+                  <div>                    
                     <div className="cardpdng">
                       <Fade left>
                         <div className="row">
@@ -2601,7 +2596,7 @@ export default class Homescreen extends Component {
                           </div>
                         </div>
                         <div className="row testimonialspanel">
-                          <div className="col-md-11 col-sm-11">
+                          <div className="col-md-12 col-sm-12">
                             <Slider autoplay={5000} className="slider-wrapper2">
                               {content_Testimonials.map((item, index) => (
                                 <div
