@@ -586,7 +586,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">                      
-                        <button href="#pricing" type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block"
+                        <button type="button" data-dismiss="modal" aria-hidden="true" aria-label="Close" className="btn btn-primary btn-block"
                           onClick={() => scrollToComponent(this.OurPrice, { offset: 0, align: "top", duration: 500, ease: "inCirc" }) }>
                           Our Price
                         </button>
@@ -730,8 +730,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <button
-                          href="#pricing"
+                        <button                          
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
@@ -927,8 +926,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <button
-                          href="#pricing"
+                        <button                          
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
@@ -1066,8 +1064,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <button
-                          href="#pricing"
+                        <button                         
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
@@ -1179,8 +1176,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <button
-                          href="#pricing"
+                        <button                          
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
@@ -1277,8 +1273,7 @@ export default class Homescreen extends Component {
                     <div className="row btntmng">
                       <div className="col-md-1"></div>
                       <div className="col-md-5">
-                        <button
-                          href="#pricing"
+                        <button                         
                           type="button"
                           data-dismiss="modal"
                           aria-hidden="true"
@@ -1650,7 +1645,11 @@ export default class Homescreen extends Component {
                   ))}
                 </Slider>
               </div>
+              <div className="col-md-12 col-sm-12 arrow bounce clear" onClick={() => scrollToComponent(this.OurPrice, { offset: 0, align: "top", duration: 500, ease: "inCirc" }) }>
+            <a><img src="../../assets/arrow-down.png" alt="Arrow Down"></img></a>            
+        </div>
             </div>
+            
           </div>
 
           <div className="col-md-12 col-sm-12">
@@ -2226,10 +2225,8 @@ export default class Homescreen extends Component {
                 </div>
               </Fade>
               <div className="row">
-                <div className="col-md-4 col-sm-12">
-                  <div className="row">
-                    <div
-                      className="containerimg cardpdng"
+              <div className="col-md-4 col-sm-12">
+              <div className="cardpdng_img"
                       ref={section => {
                         this.DistributedAgile = section;
                       }}
@@ -2241,6 +2238,39 @@ export default class Homescreen extends Component {
                         ></img>
                       </LightSpeed>
                     </div>
+              </div>
+              <div className="col-md-4 col-sm-12">
+              <div className="cardpdng_img"
+                      ref={section => {
+                        this.Technologyproject = section;
+                      }}
+                    >
+                      <Flip>
+                        <img
+                          src="../../assets/ourservice1.jpg"
+                          alt="Technology Project Consulting"
+                        ></img>
+                      </Flip>
+                    </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                <div className="cardpdng_img"
+                      ref={section => {
+                        this.DigitalTrans = section;
+                      }}
+                    >
+                      <LightSpeed right>
+                        <img
+                          src="../../assets/ourservice2.jpg"
+                          alt="DigitalTransformation Strategies"
+                        ></img>
+                      </LightSpeed>
+                    </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4 col-sm-12">
+                  <div className="row">                    
                     <div className="cardpdng">
                       <Fade left>
                         <div className="row">
@@ -2317,22 +2347,7 @@ export default class Homescreen extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-12">
-                  <div className="row">
-                    <div
-                      className="containerimg cardpdng"
-                      ref={section => {
-                        this.Technologyproject = section;
-                      }}
-                    >
-                      <Flip>
-                        <img
-                          src="../../assets/ourservice1.jpg"
-                          alt="Technology Project Consulting"
-                        ></img>
-                      </Flip>
-                    </div>
-                  </div>
+                <div className="col-md-4 col-sm-12">                 
                   <div className="cardpdng">
                     <Fade top>
                       <div className="row">
@@ -2348,9 +2363,9 @@ export default class Homescreen extends Component {
                             <h5 className="card-title cardhdr">
                               Software Architecting & Engineering
                             </h5>
-                            <p>
-                              Tired of that house of cards system ? Our top
-                              architect and engineering team...
+                            <p>                             
+                              Tired of that house of cards system ? Our top 
+                              architect and engineering team have your back Most companies have experienced...
                             </p>
                             <div>
                               <a
@@ -2411,22 +2426,7 @@ export default class Homescreen extends Component {
                     </Fade>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-12">
-                  <div className="row">
-                    <div
-                      className="containerimg cardpdng"
-                      ref={section => {
-                        this.DigitalTrans = section;
-                      }}
-                    >
-                      <LightSpeed right>
-                        <img
-                          src="../../assets/ourservice2.jpg"
-                          alt="DigitalTransformation Strategies"
-                        ></img>
-                      </LightSpeed>
-                    </div>
-                  </div>
+                <div className="col-md-4 col-sm-12">                  
                   <div className="cardpdng">
                     <Fade right>
                       <div className="row">
@@ -2588,12 +2588,12 @@ export default class Homescreen extends Component {
           <div className="col-md-12 col-sm-12">
             <div className="container-fluid">
               <div className="row centerpdng">
-                <div className="col-md-12 testimonialsbg">
+                <div className="col-md-12 col-sm-12 testimonialsbg">
                   <div className="row">
                     <Flip left>
-                      <div className="col-md-5 ">
+                      <div className="col-md-5 col-sm-12">
                         <div className="row">
-                          <div className="col-md-7">
+                          <div className="col-md-12 col-sm-12">
                             <div className="heading1">Testimonials</div>
                             <div className="testimonial_sub">
                               See What People are Saying
@@ -2601,7 +2601,7 @@ export default class Homescreen extends Component {
                           </div>
                         </div>
                         <div className="row testimonialspanel">
-                          <div className="col-md-12">
+                          <div className="col-md-11 col-sm-11">
                             <Slider autoplay={5000} className="slider-wrapper2">
                               {content_Testimonials.map((item, index) => (
                                 <div
@@ -2629,10 +2629,7 @@ export default class Homescreen extends Component {
                                     </p>
                                     <p className="testimonial_p">
                                       {item.description1}
-                                    </p>
-                                    {/* <button className="buttonReadm">
-                                      {item.button}
-                                    </button> */}
+                                    </p>                                    
                                   </div>
                                 </div>
                               ))}
@@ -2641,18 +2638,18 @@ export default class Homescreen extends Component {
                         </div>
                       </div>
                     </Flip>
-                    <div className="col-md-2"></div>
+                    <div className="col-md-2 col-sm-12"></div>
                     <Flip right>
-                      <div className="col-md-5">
+                      <div className="col-md-5 col-sm-12">
                         <div className="row">
-                          <div className="col-md-12">
+                          <div className="col-md-12 col-sm-12">
                             <div className="heading1 hdr1_pdng">
                               Trusted By Industry Leaders
                             </div>
                           </div>
                         </div>
                         <div className="row trustedbyindpanel">
-                          <div className="col-sm-12">
+                          <div className="col-sm-12 col-sm-12">
                             <div className="media media_pdng">
                               <div className="media-body">
                                 <marquee
@@ -2722,11 +2719,11 @@ export default class Homescreen extends Component {
                       </div>
 
                       <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-12 col-sm-12">
                           {/* <div className="faicons"><i className='fas fa-map-marker-alt'></i></div> */}
-                          <div className="row addresstopp">
+                          <div className="addresstopp">
                             <div className="row addrlp">
-                              <div className="col-sm-7">
+                              <div className="col-sm-12 col-md-7">
                                 <div className="address_hdr">
                                   <i className="fas fa-map-marker-alt"></i>
                                   &nbsp; Address
@@ -2762,9 +2759,9 @@ export default class Homescreen extends Component {
                                   </div>
                                 </div>
                               </div>
-                              <div className="col-sm-5">
+                              <div className="col-sm-12 col-md-5">
                                 <div className="row">
-                                  <div className="col-sm-12">
+                                  {/* <div className="col-sm-12">
                                     <div className="address_hdr">
                                       <i className="fas fa-envelope-open"></i>
                                       &nbsp; Email
@@ -2772,8 +2769,8 @@ export default class Homescreen extends Component {
                                     <div className="address_hdr1 mailid">
                                       <a href={BASE_URL}>info@yoofoo.com</a>
                                     </div>
-                                  </div>
-                                  <div className="col-sm-12 adrtop30">
+                                  </div> */}
+                                  <div className="col-sm-12">
                                     <div className="address_hdr adrbtm15">
                                       <i className="fas fa-phone-volume"></i>
                                       &nbsp; Phone

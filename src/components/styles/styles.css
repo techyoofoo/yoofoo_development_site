@@ -62,15 +62,28 @@ h3{
     font-family: 'ProximaNovaRegular';
     font-size:18px;
 }
-.header{
+.header{   	
+    padding-top: 5px;	
+    padding-bottom: 5px;	
+    background-color:#fff;    	
+    position: fixed;	
+    width: 100%;	
+    height: auto;	
+    margin-top: 0px;	
+    z-index: 9999;	
+    margin-top: -1px;
+    -webkit-box-shadow: 0 3px 3px -3px #d5d5d5;
+       -moz-box-shadow: 0 3px 3px -3px #d5d5d5;
+            box-shadow: 0 3px 3px -3px #d5d5d5;		
+}
+/* .header{
     font-family: 'ProximaNovaRegular';
     font-size:18px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color:#fff;
-    border-bottom: solid 1px #e7e7e7;
-    
-}
+    border-bottom: solid 1px #e7e7e7;   
+} */
 .logo{
     padding:0px;
 }
@@ -133,7 +146,7 @@ h3{
 }
 .heading1, .heading_testiml{
     font-family:'ProximaNovaRegular';
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 700;
     text-align: left;
     padding-top: 0px;
@@ -503,7 +516,11 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 }
 .cardpdng{
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 75px;
+}
+.cardpdng_img{
+    padding-left: 0px;
+    padding-top: 75px;
 }
 /* .image {    
     transition: .5s ease;
@@ -513,7 +530,7 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
     opacity: 0.5;
   }
    */
-   .containerimg {
+   /* .containerimg {
     position: relative;  
   }
   
@@ -551,7 +568,7 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
     font-size: 16px;
     padding: 5px 32px;
     border-radius: 6px;
-  }
+  } */
 
 .icon1{
     font-size: 35px;
@@ -585,7 +602,9 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 .testimonialspanel{    
     padding: 30px;
     margin-top: 0px;
-    background: url(/assets/testbg.png) no-repeat;
+    background-color: #003a78;
+    border-radius: 15px;
+    /* background: url(/assets/testbg.png) no-repeat; */
     background-size:contain;
     background-position:center;
     background: cover;
@@ -727,14 +746,14 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
     color: #fff;
     font-weight: 700;
     text-align: left;
-    padding:10px 0 20px 200px;
+    padding:20px 0 10px 200px;
 }
 .testimonial{
     padding-top: 10px;
 }
 .testimonial_hdr2{
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 16px;
     padding-left:200px;
     padding-top: 0;
     padding-bottom: 0px;
@@ -747,11 +766,11 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 .testimonial_p, .testimonial_sub{
     line-height: 20px;
     font-weight: lighter;
-    font-size: 14px;   
+    font-size: 16px;   
     color: #fff;
     text-align: left;
     line-height: 25px;
-    padding: 60px 50px 10px 50px;   
+    padding: 70px 50px 10px 50px;   
 }
 .testimonial_sub{
     color: #2f2f2f;
@@ -1228,6 +1247,7 @@ button:hover {
     position: relative;
     height: 70vh;
     overflow: hidden;
+    margin-top: 68px;
   }
   
   .slide {
@@ -1570,6 +1590,7 @@ button:hover {
 }
 .addresstopp{
     padding-top: 20px;
+    padding-left: 30px;
 }
 .adrtop30{
     padding-top: 30px;
@@ -1577,9 +1598,9 @@ button:hover {
 .adrbtm15{
     padding-bottom: 15px;
 }
-.addrlp{
+/* .addrlp{
     padding-left: 30px;
-}
+} */
 
 /*-------About Effect css----------*/
 
@@ -1646,7 +1667,7 @@ button:hover {
 }
 .innerContent{
     min-height: 500px;
-    padding: 50px;
+    padding: 80px 50px 50px 50px;
     background-color: #fff;
 }
 .activeclients_p{
@@ -1810,7 +1831,7 @@ button:hover {
     height: 400px;
 }
 .paytopp{
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 100px;
 }
 .pay_pdng{
@@ -1966,7 +1987,7 @@ button:hover {
     display: none;
 }
 .bg-light {
-    background-color: #fff!important;
+    background-color: transparent !important;
 }
 
 /*--------------------*/
@@ -2023,6 +2044,59 @@ button:hover {
     border-color: #007bff !important;
 }
 
+
+.arrow {
+    text-align: center;
+    margin: -55px 0 0 0;
+    padding-left: 65px;
+    z-index:999;
+    font-size:25px;
+    cursor: pointer;
+    color: #1b61a1;
+    font-weight: lighter !important;
+}
+.arrow a:hover {
+    text-decoration:none;
+    list-style-type:none;
+}
+    .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.navbar-toggler {
+    padding: .25rem 0.5rem !important;
+    font-size: 1rem !important;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.modal-content{
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+
 /*-------------Media Queries-------------------*/
 
 @media (max-height: 500px) {
@@ -2033,6 +2107,13 @@ button:hover {
   }
   
   @media (max-width: 640px) {
+    .navbar{
+        padding: 0rem 0rem !important;
+    }
+    .addresstopp{
+        padding-top: 10px;
+        padding-left: 0px;
+    }
     .address_hdr{
         margin-top: 20px;
     }
@@ -2100,7 +2181,7 @@ button:hover {
         padding-bottom: 10px;
     }
     .testimonialspanel{    
-        padding: 30px;
+        padding: 0px 30px 30px 30px;
         margin-top: 0px;
         background-color: #0a4f8d;
         background-image: none;
