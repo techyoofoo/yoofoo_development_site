@@ -238,7 +238,7 @@ h3{
     margin-right: 5px;
 }
 .hdr1_pdng{
-    padding-left: 40px;
+    padding-left: 0px;
 }
 .paragraphblue{
     font-size: 23px;
@@ -519,8 +519,9 @@ box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
     padding-top: 75px;
 }
 .cardpdng_img{
-    padding-left: 0px;
+    padding-left: 20px;
     padding-top: 75px;
+    text-align: left;
 }
 /* .image {    
     transition: .5s ease;
@@ -691,18 +692,41 @@ button:hover {
 .pos{
     z-index: -1;
 }
+.pl0{
+padding-left: 0;
+}
 .trustedbyindpanel{
     margin-top: 30px;
-    background-color: #f3f3f3;    
-    background: url(/assets/testimonials-logosbg.png) no-repeat;
+    padding-left: 0px;
+    background-color: #fff;    
+    border: solid 1px #b8ddff;
+    /* background: url(/assets/testimonials-logosbg.png) no-repeat; */
     background-size:contain;
     background-position:center;
     background: cover;
     min-height: 465px;
-    border-radius: 20px 20px 20px 20px;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 60px 20px 20px 20px;
+    -moz-border-radius: 60px 20px 20px 20px;
+    -webkit-border-radius: 60px 20px 20px 20px;
 }
+.fold {
+    position: relative;  
+    padding: 0px;    
+  }
+  .fold::before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: solid;
+    border-width: 0 0px 50px 50px;
+    border-color: #1b62a2 #fff;
+    transition: all ease 0.5s;
+    border-radius: 0px 0px 5px 0px;
+    /* -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75); */
+  }
 .headertm{
     font-size: 23px;
     color: #fff;
@@ -806,9 +830,9 @@ box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 .marqueepdng{
     text-align: center;
 }
-/* .chalkcoutureicon{
-    padding-top: 30px;
-} */
+.chalkcoutureicon{
+    padding-top: 10px;
+}
 .footerlogo{
     padding-top: 5px;
     padding-bottom: 30px;
@@ -1720,7 +1744,7 @@ button:hover {
   .popuppara, .popuppara1{
       font-size: 16px;
       line-height: 26px;
-      text-align: center;
+      text-align: justify;
       color: #1b62a1;
       padding: 10px 30px 30px 30px;
   }
@@ -1794,15 +1818,22 @@ button:hover {
 .detail-img{
     max-width: 100%;
 }
+.popupimg{
+    padding-bottom: 70px;
+}
 .btntmng{
     margin-top: 15px;
     margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .Requestfrom{  
     padding: 0 30px 30px 30px;
     margin-top: 0px;   
     margin-bottom: 0px;   
 }
+
 /*--------------*/
 
 .clear{
@@ -1865,10 +1896,10 @@ button:hover {
 }
 .monthlyhdr{
     color: #3da5d6;
-    font-size: 28px;
+    font-size: 28px;    
     font-weight: 600;
     text-align: left;
-    padding-left: 0;
+    padding-left: 15px;
 }
 .monthlydis{
     background-color: #3da5d6;
@@ -1876,6 +1907,7 @@ button:hover {
     padding: 3px 6px 3px 6px;
     font-size: 20px;
     text-align: left;
+    margin-left: 15px;
 }
 .hpatop{
     padding-top: 20px;
@@ -1931,6 +1963,7 @@ button:hover {
     font-size: 30px;
     text-align: left;
     font-weight: 600;
+    padding-left: 5px;
 }
 .payh4{
     color: #0e447e;
@@ -2107,6 +2140,17 @@ button:hover {
   }
   
   @media (max-width: 640px) {
+    .box1, .box2, .box3, .box4{        
+        border-right: 0;       
+    }
+    .borderb1{
+        border-bottom: solid 1px #e0e0e0;
+    }
+    .cardpdng_img{
+        padding-left: 0px;
+        padding-top: 50px;
+        text-align: left;
+    }
     .navbar{
         padding: 0rem 0rem !important;
     }
@@ -2220,9 +2264,9 @@ button:hover {
         border: solid 1px #b8ddff;
         /* background: url(/assets/testimonials-logosbg.png) no-repeat; */       
         min-height: 465px;
-        border-radius: 20px 20px 20px 20px;
-        -moz-border-radius: 20px 20px 20px 20px;
-        -webkit-border-radius: 20px 20px 20px 20px;
+        border-radius: 65px 20px 20px 20px;
+        -moz-border-radius: 65px 20px 20px 20px;
+        -webkit-border-radius: 65px 20px 20px 20px;
         -webkit-box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 -moz-box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);

@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import {
-  Zoom,
+  // Zoom,
   Fade,
   Flip,
   Slide,
-  Bounce,
+  // Bounce,
   LightSpeed,
-  Reveal
+  // Reveal
 } from "react-reveal";
 import {
   Collapse,
@@ -24,7 +24,7 @@ import {
 } from "reactstrap";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
-import ReactTooltip from "react-tooltip";
+// import ReactTooltip from "react-tooltip";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import "../styles/fontstyle.css";
@@ -576,11 +576,11 @@ export default class Homescreen extends Component {
                       development services sinking with the latest trends of the
                       market with our different range of solutions.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/webdev.jpg"
                         className="col-sm-6"
-                        alt="Mobile Development"
+                        alt="Web Development"
                       ></img>
                     </div>
                     <div className="row btntmng">
@@ -720,7 +720,7 @@ export default class Homescreen extends Component {
                       Innovative mobile business strategies. Beautiful user
                       experience designs. Powerful agile app development.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/mobiledev.jpg"
                         className="col-sm-6"
@@ -916,11 +916,11 @@ export default class Homescreen extends Component {
                       organization. All of our software interfaces are created
                       to meet or exceed industry standards.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/softwaredev.jpg"
                         className="col-sm-6"
-                        alt="Mobile Development"
+                        alt="Software Development Life-Cycle Management (SDLC)"
                       ></img>
                     </div>
                     <div className="row btntmng">
@@ -1054,11 +1054,11 @@ export default class Homescreen extends Component {
                       organizations, large and small, throughout the world
                       today.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/data_management.jpg"
                         className="col-sm-6"
-                        alt="Mobile Development"
+                        alt="Data Services"
                       ></img>
                     </div>
                     <div className="row btntmng">
@@ -1166,11 +1166,11 @@ export default class Homescreen extends Component {
                       of web designing goes beyond just embedding attractive
                       layouts with the development code.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/design2.jpg"
                         className="col-sm-6"
-                        alt="Mobile Development"
+                        alt="Design & Creatives"
                       ></img>
                     </div>
                     <div className="row btntmng">
@@ -1263,11 +1263,11 @@ export default class Homescreen extends Component {
                       quality releases need to incorporate an effective quality
                       assurance and testing program in their operations.
                     </div>
-                    <div>
+                    <div className="popupimg">
                       <img
                         src="../../assets/testing1.jpg"
                         className="col-sm-6"
-                        alt="Mobile Development"
+                        alt="Testing & Quality Analysis"
                       ></img>
                     </div>
                     <div className="row btntmng">
@@ -1437,7 +1437,7 @@ export default class Homescreen extends Component {
                     <img
                       src="../../assets/TechnologyProjectConsulting.jpg"
                       className="img-fluid ousrser_img col-sm-8"
-                      alt="Distributed Agile Augmentation
+                      alt="Technology Project Consulting
 "
                     ></img>
                   </div>
@@ -1485,7 +1485,7 @@ export default class Homescreen extends Component {
                     <img
                       src="../../assets/ourdna.jpg"
                       className="img-fluid ousrser_img col-sm-8"
-                      alt="Distributed Agile Augmentation
+                      alt="Digital Transformation Strategies
 "
                     ></img>
                   </div>
@@ -2131,7 +2131,7 @@ export default class Homescreen extends Component {
                           <div className="payh2">
                             UPTO
                             <span className="payh3">
-                              20 <span className="payh4">%</span>
+                              20<span className="payh4">%</span>
                             </span>
                           </div>
                         </div>
@@ -2151,7 +2151,7 @@ export default class Homescreen extends Component {
                           <div className="payh2">
                             UPTO
                             <span className="payh3">
-                              30 <span className="payh4">%</span>
+                              30<span className="payh4">%</span>
                             </span>
                           </div>
                         </div>
@@ -2160,7 +2160,7 @@ export default class Homescreen extends Component {
                   </div>
                   <div className="row">
                     <Fade bottom>
-                      <div className="col-sm-5 box3">
+                      <div className="col-sm-5 box3 borderb1">
                         <div className="iconimg">
                           <img
                             className="img-fluid"
@@ -2173,7 +2173,7 @@ export default class Homescreen extends Component {
                           <div className="payh2">
                             UPTO
                             <span className="payh3">
-                              40 <span className="payh4">%</span>
+                              40<span className="payh4">%</span>
                             </span>
                           </div>
                         </div>
@@ -2193,7 +2193,7 @@ export default class Homescreen extends Component {
                           <div className="payh2">
                             UPTO
                             <span className="payh3">
-                              50 <span className="payh4">%</span>
+                              50<span className="payh4">%</span>
                             </span>
                           </div>
                         </div>
@@ -2365,7 +2365,7 @@ export default class Homescreen extends Component {
                             </h5>
                             <p>                             
                               Tired of that house of cards system ? Our top 
-                              architect and engineering team have your back Most companies have experienced...
+                              architect and engineering team have your back Most companies have...
                             </p>
                             <div>
                               <a
@@ -2648,9 +2648,9 @@ export default class Homescreen extends Component {
                             </div>
                           </div>
                         </div>
-                        <div className="row trustedbyindpanel">
-                          <div className="col-sm-12 col-sm-12">
-                            <div className="media media_pdng">
+                        <div className="row">
+                          <div className="col-sm-12 col-md-11 trustedbyindpanel pl0">
+                            <div className="media media_pdng fold">
                               <div className="media-body">
                                 <marquee
                                   behavior="scroll"
